@@ -48,6 +48,10 @@ html, body {
     color: #fff;
 }
 
+#initial > button:focus {
+    outline: none;
+}
+
 #initial > img:hover {
     width: 9vw;
 }
