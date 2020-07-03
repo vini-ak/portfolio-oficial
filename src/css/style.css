@@ -7,16 +7,23 @@ html, body {
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Oswald', sans-serif;
+}
+
+html {
     overflow-y: hidden;
+}
+
+body {
+    transition: 1s;
 }
 
 #initial {
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7vh 0;
+    padding-top: 7vh;
 }
 
 #initial > img {
@@ -55,4 +62,66 @@ html, body {
 
 #initial > img:hover {
     width: 9vw;
+}
+
+#initial > * {
+    transition: 0.4s;
+}
+
+.sumir {
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+#banner {
+    max-width: 35%;
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+
+
+#social-media {
+    position: absolute;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 33%;
+}
+
+#social-media > a > img {
+    max-width: 60px;
+    margin-left: 20px;
+}
+
+#social-media > a {
+    width: 82px;
+    height: 62px;
+    background-color: #fff;
+    top: 30%;
+    /* display: flex;
+    /* flex-direction: column;
+    justify-content: center; */
+    transform: translateX(-20px);
+    transition: 0.2s;
+}
+
+#social-media > a:hover {
+    transform: translateX(0px);
+}
+
+
+
+
+
+
+
+
+
+#contact img {
+    width: 100px;
+    padding: 2%;
+    border: solid 6px #000;
+    border-radius: 50%;
 }
