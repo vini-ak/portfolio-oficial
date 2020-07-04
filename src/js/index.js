@@ -11,17 +11,17 @@ function buttonOnClick() {
             })
     
             setTimeout(() => {
-                document.querySelector('html').style.overflowY = 'auto'
                 document.body.style.transform = "translateY(-107vh)"
             }, 1200)
 
-            /* alterando o conteudo */
-            let h1am =  document.querySelector('#about-me h1')
+            let aboutMeH1 = document.querySelector('#about-me h1')
+            let aboutMeText = document.querySelector('#about-me > p')
 
             if(button.value == 'pt-br') {
-                h1am.innerHTML = "PROJETOS"
+                aboutMeH1.innerHTML = "SOBRE MIM"
+                aboutMeText.innerHTML = "Prazer! Meu nome é Vinícius Vieira. Sou só um jovem atrás de desenvolvimento pessoal e profissional. Atualmente ocupo o cargo de <b>Analista de Projetos</b> na Seed a Bit, curso o 4° período de <b>Sistemas de Informação na UFRPE</b> e estou motivado a conseguir meu primeiro estágio na área."
             } else if (button.value == 'en') {
-                h1am.innerHTML = "PROJECTS"
+                aboutMeH1.innerHTML = "ABOUT ME"
             }
             
         }
