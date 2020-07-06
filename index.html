@@ -70,9 +70,24 @@
                 </div>
                 <div id="contact">
                     <h1></h1>
-                    <a href="">
-                        <img src="./src/css/icons/redes-sociais/email.svg" alt="">
-                    </a>
+                    <form action="formulario" method="post" enctype="text/plain">
+                        <div class="input-form">
+                            <input type="text" name="nome" required> 
+                            <label for="nome">Nome</label>
+                        </div>
+                        <div class="input-form">
+                            <input type="email" name="email" required>
+                            <label for="email">Seu e-mail</label>
+                        </div>
+                        <div class="input-form">
+                            <textarea name="mensagem" cols="30" rows="3" required></textarea>
+                            <label for="mensagem">Mensagem</label>
+                        </div>
+                        <input type="submit" class="botao-form" value="Enviar">			
+                    </form>
+                    <div id="rodape">
+                        <h5>Vinícius Vieira © Todos os direitos reservados</h5>
+                    </div>
                 </div>
             </div>
     </div>

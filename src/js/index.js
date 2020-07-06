@@ -12,14 +12,14 @@ function buttonOnClick() {
     
             setTimeout(() => {
                 document.querySelector('html').style.overflowY = "visible"
-                document.querySelector('#initial').style.display = "none"
             }, 1900)
 
             setTimeout(() => {
                 document.querySelector('#banner').style.position = "fixed"
                 document.querySelector('#banner').style.left = "0" 
                 document.querySelector('#banner').style.bottom = "0"
-            }, 3000);
+                document.querySelector('#initial').style.display = "none"
+            }, 2200);
 
             let aboutMeH1 = document.querySelector('#about-me h1')
             let aboutMeText = document.querySelector('#about-me > p')
