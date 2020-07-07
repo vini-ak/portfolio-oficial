@@ -13,16 +13,21 @@ function buttonOnClick() {
     
             setTimeout(() => {
                 document.querySelector('html').style.overflowY = "visible"
-                let page = $('#page').get(0)
-                console.log(page)
-            }, 1900)
+                let targetOffset = $('#page').offset().top;
+                $('html, body').animate({
+                    scrollTop: targetOffset
+                  }, 1200);
+            }, 1200)
 
             setTimeout(() => {
                 document.querySelector('#banner').style.position = "fixed"
                 document.querySelector('#banner').style.left = "0" 
                 document.querySelector('#banner').style.bottom = "0"
+            }, 2600);
+
+            setTimeout(() => {
                 document.querySelector('#initial').style.display = "none"
-            }, 2200);
+            }, 2800);
 
             let aboutMeH1 = document.querySelector('#about-me h1')
             let aboutMeText = document.querySelector('.me')
