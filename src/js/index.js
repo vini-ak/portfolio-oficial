@@ -16,18 +16,18 @@ function buttonOnClick() {
                 let targetOffset = $('#page').offset().top;
                 $('html, body').animate({
                     scrollTop: targetOffset
-                  }, 1200);
+                  }, 1000);
             }, 1200)
 
             setTimeout(() => {
                 document.querySelector('#banner').style.position = "fixed"
                 document.querySelector('#banner').style.left = "0" 
                 document.querySelector('#banner').style.bottom = "0"
-            }, 2600);
+            }, 2300);
 
             setTimeout(() => {
                 document.querySelector('#initial').style.display = "none"
-            }, 2620);
+            }, 2400);
 
             let aboutMeH1 = document.querySelector('#about-me h1')
             let aboutMeText = document.querySelector('.me')
@@ -42,7 +42,11 @@ function buttonOnClick() {
 
 
             let projectsH1 = document.querySelector('#projects h1')
+
             let contactH1 = document.querySelector('#contact h1')
+            let label1 = document.querySelector('.input-form:nth-child(1) label')
+            let label2 = document.querySelector('.input-form:nth-child(2) label')
+            let label3 = document.querySelector('.input-form:nth-child(3) label')
 
             if(button.value == 'pt-br') {
                 aboutMeH1.innerHTML = "SOBRE MIM"
@@ -57,6 +61,7 @@ function buttonOnClick() {
                 projectsH1.innerHTML = "PROJETOS"
 
                 contactH1.innerHTML  = "CONTATO"
+
             } else if (button.value == 'en') {
                 aboutMeH1.innerHTML = "ABOUT ME"
                 aboutMeText.innerHTML = "What's up? I'm glad to see you here! My name is Vinícius Vieira. I'm just a young guy seeking for personal and profissional improvement. Currently I am at fourth semester of Information Systems at UFRPE and work as a Project Analyst at Seed a Bit Technology."
@@ -70,6 +75,12 @@ function buttonOnClick() {
                 projectsH1.innerHTML = "PROJECTS"
 
                 contactH1.innerHTML  = "CONTACT"
+                label1.innerHTML = "Name"
+                label2.innerHTML = "Your best e-mail"
+                label3.innerHTML = "Message"
+                document.querySelector('.botao-form').value = "Submit"
+
+                document.querySelector('#rodape').innerHTML = "Handcrafted by me © Vinícius Vieira"
             }
             
         }

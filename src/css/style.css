@@ -13,10 +13,6 @@ html {
     overflow-y: hidden;
 }
 
-body {
-    transition: 1s;
-}
-
 #initial {
     width: 100vw;
     height: 100vh;
@@ -78,7 +74,7 @@ body {
     height: 100vh;
     display: flex;
     flex-flow: row wrap;
-    overflow-y: auto\;
+    overflow-y: auto;
 }
 
 #banner {
@@ -128,7 +124,7 @@ body {
 
 #content {
     width: 65vw;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: absolute;
     left: 35vw;
 }
@@ -146,6 +142,7 @@ body {
     font-size: 3.2rem;
     margin-bottom: 3.6rem;
     text-align: center;
+    margin-left: 0.3em;
 }
 
 #cards {
@@ -221,6 +218,10 @@ body {
     position: relative;
     /* overflow-x: hidden; */
     width: 100%;
+}
+
+#about-me, #projects {
+    margin-bottom: 10vh;
 }
 
 
