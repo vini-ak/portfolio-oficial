@@ -79,7 +79,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     overflow-y: auto;
-    position: absolute;
+    position: relative;
     overflow-x: hidden;
     
 }
@@ -306,7 +306,28 @@ nav a:hover {
     margin-bottom: 10vh;
 }
 
+#people {
+    padding: 0 10%;
+    margin-top: 15%; margin-bottom: 7%;
+}
+#people > div{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5%;
+    height: 100vh;
+}
 
+.comentario {
+    border: solid 3px #000;
+    border-radius: 5px;
+    background: #dee2e6;
+    transition: 0.5s ease-out;
+}
+
+.comentario:hover {
+    transform: scale(1.05);
+}
 
 #projects > div {
     margin-top: 3rem;

@@ -15,9 +15,9 @@ function buttonOnClick() {
                 document.querySelector('html').style.overflowY = "visible"
                 document.querySelector('#page').style.animation = "up 1.5s"
 
-                document.querySelector('#banner').style.position = "fixed"
                 document.querySelector('#banner').style.left = "0" 
                 document.querySelector('#banner').style.bottom = "0"
+                document.querySelector('#banner').style.position = "fixed"
                 document.querySelector("#initial").style.display = "none"
             }, 1600);
 
@@ -83,8 +83,6 @@ function buttonOnClick() {
 
                 document.querySelector('#rodape > h5').innerHTML = "Handcrafted by me © Vinícius Vieira"
             }
-            
-
         }
     })
 }
@@ -92,13 +90,12 @@ function buttonOnClick() {
 $('#banner nav a').click(function(e) {
     e.preventDefault();
     let id = $(this).attr('href'); // retorna o id para onde vai o link
-    let targetOffset = $(id).offset().top;
-
+    let targetOffset = document.querySelector(id).offsetTop
     console.log(targetOffset)
 
     $('html, body').animate({
-      scrollTop: targetOffset,
-    }, 1500);
+      scrollTop: targetOffset
+    }, 800);
   })
 
 buttonOnClick()
