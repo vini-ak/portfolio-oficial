@@ -13,21 +13,13 @@ function buttonOnClick() {
     
             setTimeout(() => {
                 document.querySelector('html').style.overflowY = "visible"
-                let targetOffset = $('#page').offset().top;
-                $('html, body').animate({
-                    scrollTop: targetOffset
-                  }, 1000);
-            }, 1200)
+                document.querySelector('#page').style.animation = "up 1.5s"
 
-            setTimeout(() => {
                 document.querySelector('#banner').style.position = "fixed"
                 document.querySelector('#banner').style.left = "0" 
                 document.querySelector('#banner').style.bottom = "0"
-            }, 2300);
-
-            setTimeout(() => {
-                document.querySelector('#initial').style.display = "none"
-            }, 2400);
+                document.querySelector("#initial").style.display = "none"
+            }, 1600);
 
             let aboutMeH1 = document.querySelector('#about-me h1')
             let aboutMeText = document.querySelector('.me')
@@ -87,11 +79,12 @@ function buttonOnClick() {
                 label1.innerHTML = "Name"
                 label2.innerHTML = "Your best e-mail"
                 label3.innerHTML = "Message"
-                document.querySelector('.botao-form').value = "Submit"
+                document.querySelector('.botao-form').value = "SUBMIT"
 
                 document.querySelector('#rodape > h5').innerHTML = "Handcrafted by me © Vinícius Vieira"
             }
             
+
         }
     })
 }
@@ -101,9 +94,11 @@ $('#banner nav a').click(function(e) {
     let id = $(this).attr('href'); // retorna o id para onde vai o link
     let targetOffset = $(id).offset().top;
 
+    console.log(targetOffset)
+
     $('html, body').animate({
-      scrollTop: targetOffset
-    }, 800);
+      scrollTop: targetOffset,
+    }, 1500);
   })
 
 buttonOnClick()
