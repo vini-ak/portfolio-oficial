@@ -292,6 +292,10 @@ nav a:hover {
     margin: 10vh 0;
 }
 
+.comment img {
+    height: 100%;
+}
+
 #about-me, #projects, #contact, #skills {
     min-height: 100vh;
     display: flex;
@@ -320,13 +324,28 @@ nav a:hover {
 
 .comentario {
     border: solid 3px #000;
-    border-radius: 5px;
-    background: #dee2e6;
+    color: #0F124D;
+    background-color: #fff;
+    box-shadow: 3px 3px 0 1px #343a40;
+    box-sizing: border-box;
     transition: 0.5s ease-out;
+    padding: 5%;
+    width: 100%;
+}
+
+.comentario h3 {
+    font-size: 1.5rem;
+}
+
+.comentario h5 {
+    font-size: 1rem;
+    color: #343a40;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .comentario:hover {
     transform: scale(1.05);
+    box-shadow: 5px 5px 1px 2.5px #343a40;
 }
 
 #projects > div {
@@ -335,7 +354,7 @@ nav a:hover {
     width: 80%;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    grid-gap: 5%;
+    grid-gap: 2%;
     margin-left: 2.5vw;
     align-self: center;
     height: 100vh;
