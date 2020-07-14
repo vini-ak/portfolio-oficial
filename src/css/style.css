@@ -7,6 +7,7 @@ html, body {
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Oswald', sans-serif;
+    position: relative;
 }
 
 html {
@@ -136,7 +137,7 @@ body {
 nav {
     margin-top: 7%;
     margin-bottom: 5%;
-    background-color: #343a40;
+    background-color: #434456;
     padding: 15px 0;
 }
 nav a {
@@ -144,12 +145,34 @@ nav a {
     font-size: 1.4em;
     color: #c4c4c4;
     font-family: 'Source Sans Pro', sans-serif;
-
+    transition: 0.7s ease-in;
+    font-weight: bold;
 }
 
 nav a:hover {
     color: #dee2e6;
     transform: rotate(9px);
+}
+
+.nav-link {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.nav-link > a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-link > span {
+    width: 65%;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-100px);
+    transition: ease-out 0.7s ;
+    transition-delay: 0s;
 }
 
 .banner-logo {
@@ -191,6 +214,20 @@ nav a:hover {
 
 #banner > p {
     margin-top: 1vh;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 #social-media > a:hover {
@@ -288,7 +325,7 @@ nav a:hover {
 .comment {
     width: 100%;
     height: 35vh;
-    background-color: #c4c4c4 ;
+    background-color: #97979B ;
     margin: 10vh 0;
 }
 
@@ -345,7 +382,7 @@ nav a:hover {
 
 .comentario:hover {
     transform: scale(1.05);
-    box-shadow: 5px 5px 1px 2.5px #343a40;
+    box-shadow: 5px 5px 1px 2px #343a40;
 }
 
 #projects > div {
