@@ -331,6 +331,7 @@ nav a:hover {
 
 .comment img {
     height: 100%;
+    transform: translate3d();
 }
 
 #about-me, #projects, #contact, #skills {
