@@ -27,7 +27,12 @@ function englishText() {
     document.querySelector('#banner nav .nav-link:nth-child(3) a').innerHTML = "Projects"
     document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "Contact"
     document.querySelector('#banner > h4').innerHTML = "Social Media"
-    document.querySelector('#banner > p').innerHTML = "Não fala inglês? Experimente em <a href='#about-me' id='change-language'>Português</a>."
+
+    if(screen.width <= 600) {
+        document.querySelector('#banner > p').innerHTML = "Mudar para <a href='#about-me' id='change-language'>Português</a>."
+    } else {
+        document.querySelector('#banner > p').innerHTML = "Não fala inglês? Experimente em <a href='#about-me' id='change-language'>Português</a>."
+    }
     document.querySelector('#change-language').onclick = (e) => {
         e.preventDefault()
         if(window.language === 'pt-br') {
@@ -75,6 +80,28 @@ function portugueseText() {
     let label2 = document.querySelector('.input-form:nth-child(2) label')
     let label3 = document.querySelector('.input-form:nth-child(3) label')
 
+
+    document.querySelector('#banner nav .nav-link:nth-child(1) a').innerHTML = "Sobre mim"
+    document.querySelector('#banner nav .nav-link:nth-child(2) a').innerHTML = "Habilidades"
+    document.querySelector('#banner nav .nav-link:nth-child(3) a').innerHTML = "Projetos"
+    document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "Contato"
+    document.querySelector('#banner > h4').innerHTML = "Redes Sociais"
+
+    if(screen.width <= 600) {
+        document.querySelector('#banner > p').innerHTML = "Switch to <a href='#about-me' id='change-language'>English</a>."   
+    } else {
+        document.querySelector('#banner > p').innerHTML = "Not your language? Switch to <a href='#about-me' id='change-language'>English</a>."   
+    }
+
+    document.querySelector('#change-language').onclick = (e) => {
+        e.preventDefault()
+        if(window.language === 'pt-br') {
+            englishText()
+        } else if(language === 'en') {
+            portugueseText()
+        }
+    }
+
     aboutMeH1.innerHTML = "SOBRE MIM"
     aboutMeText.innerHTML = "Prazer! Meu nome é Vinícius Vieira. Sou só um jovem atrás de desenvolvimento pessoal e profissional. Atualmente ocupo o cargo de <b>Analista de Projetos</b> na Seed a Bit, curso o 4° período de <b>Sistemas de Informação na UFRPE</b> e estou motivado a conseguir meu primeiro estágio na área."
     interest.innerHTML = "Sou apaixonado por conhecimento. Dedico meu tempo experimentando novas áreas para descobrir novos talentos. No momento, eu tenho dedicado meus estudos para a parte de Front-End e pretendo entrar mais a fundo em UI/UX design para melhorar a usabilidade e a aparência dos meus futuros projetos."
@@ -105,10 +132,14 @@ function buttonOnClick() {
                 document.querySelector('html').style.overflowY = "visible"
                 document.querySelector('#page').style.animation = "up 1.5s"
 
-                document.querySelector('#banner').style.left = "0" 
-                document.querySelector('#banner').style.bottom = "0"
-                document.querySelector('#banner').style.position = "fixed"
-                document.querySelector("#initial").style.display = "none"
+                if(screen.orientation.type !== "portrait-primary") {
+                    document.querySelector('#banner').style.left = "0" 
+                    document.querySelector('#banner').style.bottom = "0"
+                    document.querySelector('#banner').style.position = "fixed"
+                }
+
+                document.querySelector("#initial").style.display = "none" 
+                
             }, 1600);
 
             
@@ -155,15 +186,6 @@ $('#banner nav a').click(function(e) {
     }, 800);
   })
 
-
-document.querySelector('#change-language').onclick = (e) => {
-    e.preventDefault()
-    if(window.language === 'pt-br') {
-        englishText()
-    } else if(language === 'en') {
-        portugueseText()
-    }
-}
 
 buttonOnClick()
 hoverLink()
