@@ -523,10 +523,11 @@ nav a:hover {
 
     #banner {
         top: 0;
+        height: 103vh;
     }
 
     #banner p {
-        margin-top: 5vh;
+        margin-top: 8vh;
         font-size: 1.5rem;
     }
 
@@ -612,9 +613,14 @@ nav a:hover {
         display: none;
     }
 
+    .comentario {
+        height: 55vh;
+    }
+
     #people > div {
         grid-template-rows: repeat(3, auto);
         grid-template-columns: auto;
+        height: 180vh;
     }
 
     footer {
@@ -626,7 +632,7 @@ nav a:hover {
         display: flex;
         flex-flow: column wrap;
         background-color: #97979B;
-        height: 40vh;
+        min-height: 40vh;
 
     }
 

@@ -20,7 +20,7 @@ function englishText() {
     document.querySelector('#banner nav .nav-link:nth-child(1) a').innerHTML = "About me"
     document.querySelector('#banner nav .nav-link:nth-child(2) a').innerHTML = "Skills"
     document.querySelector('#banner nav .nav-link:nth-child(3) a').innerHTML = "Projects"
-    document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "Contact"
+    document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "People"
     document.querySelector('#banner > h4').innerHTML = "Social Media"
 
     if(screen.width <= 600) {
@@ -31,12 +31,13 @@ function englishText() {
     document.querySelector('#change-language').onclick = (e) => {
         e.preventDefault()
         if(window.language === 'pt-br') {
-            englishText()
             window.language = 'en'
+            englishText()
         } else if(language === 'en') {
-            portugueseText()
             window.language = 'pt-br'
+            portugueseText()
         }
+        console.log(window.language)
     }
 
     cardsH1.innerHTML = "SKILLS"
@@ -69,7 +70,7 @@ function portugueseText() {
     document.querySelector('#banner nav .nav-link:nth-child(1) a').innerHTML = "Sobre mim"
     document.querySelector('#banner nav .nav-link:nth-child(2) a').innerHTML = "Habilidades"
     document.querySelector('#banner nav .nav-link:nth-child(3) a').innerHTML = "Projetos"
-    document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "Contato"
+    document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "Colegas"
     document.querySelector('#banner > h4').innerHTML = "Redes Sociais"
 
     if(screen.width <= 600) {
@@ -81,10 +82,13 @@ function portugueseText() {
     document.querySelector('#change-language').onclick = (e) => {
         e.preventDefault()
         if(window.language === 'pt-br') {
+            window.language = 'en'
             englishText()
         } else if(language === 'en') {
+            window.language = 'pt-br'
             portugueseText()
         }
+        console.log(window.language)
     }
 
     aboutMeH1.innerHTML = "SOBRE MIM"
@@ -101,6 +105,8 @@ function portugueseText() {
 
     document.querySelector('.comentario:nth-child(2) > p').innerHTML = 'Vinicius foi meu primeiro menor aprendiz, um rapaz determinado e organizado que se desdobrava em 76km diariamente. É isso mesmo (Cabo, UFRPE e centro do Recife). Foram pouco mais de 1 ano juntos e só posso finalizar dizendo que ele é um guerreiro e merecedor de cada conquista na vida.'
     document.querySelector('.comentario:nth-child(3) > p').innerHTML = 'Trabalhar com Vinícius foi algo muito agregador pra mim já que ele sempre foi aberto a compartilhar o conhecimento que ele tem e aprender junto com a equipe. Sempre foi empenhado em fazer o melhor para o projeto e o bem estar da equipe.'
+    document.querySelector('.comentario:nth-child(4) > p').innerHTML = 'Vinícius sabe como resolver problemas de maneira inteligente, tanto da vida, quanto academicamente. É alguém totalmente companheiro e confiável em todo contexto, possuindo uma empatia incomparável, é realmente alguém que eu não abriria mão de ter como amigo!'
+
 }
 
 function buttonOnClick() {
