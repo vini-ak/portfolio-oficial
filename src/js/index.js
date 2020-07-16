@@ -13,11 +13,6 @@ function englishText() {
 
     let projectsH1 = document.querySelector('#projects h1')
 
-    let contactH1 = document.querySelector('#contact h1')
-    let label1 = document.querySelector('.input-form:nth-child(1) label')
-    let label2 = document.querySelector('.input-form:nth-child(2) label')
-    let label3 = document.querySelector('.input-form:nth-child(3) label')
-
     aboutMeH1.innerHTML = "ABOUT ME"
     aboutMeText.innerHTML = "Hey there! I'm glad to see you here! My name is Vinícius Vieira. I'm just a young guy seeking for personal and profissional improvement. Currently I am at fourth semester of Information Systems at UFRPE and work as a Project Analyst at Seed a Bit Technology."
     interest.innerHTML =  "I am a knowledge lover and I usually spend my time studying content of different areas (such as Data Science) to find out new abilities. Nowdays I dedicate my days studing web development (more focused on front-end technologies) and I intend to go deep into UI/UX design to upgrade the appearance and usability of my next projects."
@@ -29,7 +24,7 @@ function englishText() {
     document.querySelector('#banner > h4').innerHTML = "Social Media"
 
     if(screen.width <= 600) {
-        document.querySelector('#banner > p').innerHTML = "Mudar para <a href='#about-me' id='change-language'>Português</a>."
+        document.querySelector('#banner > p').innerHTML = "<a href='#about-me' id='change-language'>Mudar para Português</a>."
     } else {
         document.querySelector('#banner > p').innerHTML = "Não fala inglês? Experimente em <a href='#about-me' id='change-language'>Português</a>."
     }
@@ -51,11 +46,6 @@ function englishText() {
 
     projectsH1.innerHTML = "PROJECTS"
 
-    contactH1.innerHTML  = "CONTACT"
-    label1.innerHTML = "Name"
-    label2.innerHTML = "Your best e-mail"
-    label3.innerHTML = "Message"
-    document.querySelector('.botao-form').value = "SUBMIT"
 
     document.querySelector('#rodape > h5').innerHTML = "Handcrafted by me © Vinícius Vieira"
 }
@@ -75,11 +65,6 @@ function portugueseText() {
 
     let projectsH1 = document.querySelector('#projects h1')
 
-    let contactH1 = document.querySelector('#contact h1')
-    let label1 = document.querySelector('.input-form:nth-child(1) label')
-    let label2 = document.querySelector('.input-form:nth-child(2) label')
-    let label3 = document.querySelector('.input-form:nth-child(3) label')
-
 
     document.querySelector('#banner nav .nav-link:nth-child(1) a').innerHTML = "Sobre mim"
     document.querySelector('#banner nav .nav-link:nth-child(2) a').innerHTML = "Habilidades"
@@ -88,7 +73,7 @@ function portugueseText() {
     document.querySelector('#banner > h4').innerHTML = "Redes Sociais"
 
     if(screen.width <= 600) {
-        document.querySelector('#banner > p').innerHTML = "Switch to <a href='#about-me' id='change-language'>English</a>."   
+        document.querySelector('#banner > p').innerHTML = "<a href='#about-me' id='change-language'>Switch to English</a>."   
     } else {
         document.querySelector('#banner > p').innerHTML = "Not your language? Switch to <a href='#about-me' id='change-language'>English</a>."   
     }
@@ -113,7 +98,6 @@ function portugueseText() {
 
     projectsH1.innerHTML = "PROJETOS"
 
-    contactH1.innerHTML  = "CONTATO"
 }
 
 function buttonOnClick() {
