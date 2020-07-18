@@ -14,8 +14,8 @@ function englishText() {
     let projectsH1 = document.querySelector('#projects h1')
 
     aboutMeH1.innerHTML = "ABOUT ME"
-    aboutMeText.innerHTML = "Hey there! I'm glad to see you here! My name is Vinícius Vieira. I'm just a young guy seeking for personal and profissional improvement. Currently I am at fourth semester of Information Systems at UFRPE and work as a Project Analyst at Seed a Bit Technology."
-    interest.innerHTML =  "I am a knowledge lover and I usually spend my time studying content of different areas (such as Data Science) to find out new abilities. Nowdays I dedicate my days studing web development (more focused on front-end technologies) and I intend to go deep into UI/UX design to upgrade the appearance and usability of my next projects."
+    aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Hey there! I'm glad to see you here! I'm just a young guy seeking for personal and profissional improvement. Currently I am at fourth semester of <b>Information Systems at UFRPE</b> and work as a <b>Project Analyst at Seed a Bit Technology</b>. At the moment I'm looking for my first internship in Brazil, but I am also interested in taking a freelancer job or just become your friend :)"
+    interest.innerHTML =  "&nbsp;&nbsp;&nbsp;&nbsp;I am a knowledge lover and I usually spend my time studying content of different areas (such as Data Science) to find out new abilities. Nowdays I dedicate my days studing <b>Web Development</b> (more focused on front-end technologies) and I intend to go deep into UI/UX design to upgrade the appearance and usability of my next projects."
 
     document.querySelector('#banner nav .nav-link:nth-child(1) a').innerHTML = "About me"
     document.querySelector('#banner nav .nav-link:nth-child(2) a').innerHTML = "Skills"
@@ -92,8 +92,8 @@ function portugueseText() {
     }
 
     aboutMeH1.innerHTML = "SOBRE MIM"
-    aboutMeText.innerHTML = "Prazer! Meu nome é Vinícius Vieira. Sou só um jovem atrás de desenvolvimento pessoal e profissional. Atualmente ocupo o cargo de <b>Analista de Projetos</b> na Seed a Bit, curso o 4° período de <b>Sistemas de Informação na UFRPE</b> e estou motivado a conseguir meu primeiro estágio na área."
-    interest.innerHTML = "Sou apaixonado por conhecimento. Dedico meu tempo experimentando novas áreas para descobrir novos talentos. No momento, eu tenho dedicado meus estudos para a parte de Front-End e pretendo entrar mais a fundo em UI/UX design para melhorar a usabilidade e a aparência dos meus futuros projetos."
+    aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Prazer! Sou um jovem atrás de desenvolvimento pessoal e profissional. Atualmente ocupo o cargo de <b>Analista de Projetos</b> na Seed a Bit, curso o 4° período de <b>Sistemas de Informação na UFRPE</b> e estou motivado a conseguir meu primeiro estágio em TI."
+    interest.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Tenho investido meu tempo para descobrir novos talentos e tecnologias que possam me ajudar no desenvolvimento de projetos futuros. No momento eu tenho dedicados meus estudos para a parte de <b>Desenvolvimento Web</b>, com um foco maior em tecnologias Front-End, e pretendo entrar mais a fundo em UI/UX design para melhorar a usabilidade e aparência dos meus próximos trabalhos."
                 
     cardsH1.innerHTML = "HABILIDADES"
     cardsLi1.innerHTML = "Design de Interfaces"

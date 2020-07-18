@@ -407,7 +407,23 @@ nav a:hover {
 #projects a {
     background-color: #CCCDCF;
     padding: 20px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
 
+#projects a > img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    filter: brightness(80%);
+    transition: 0.5s;
+}
+
+#projects a:hover img {
+    filter:brightness(75%) blur(0.7px);
+    transform: scale(1.04);
 }
 
 #projects a:nth-child(1) {
@@ -548,6 +564,16 @@ nav a:hover {
         font-size: 2.25rem;
         margin-left: 0.15em;
         letter-spacing: 0.15em;
+        /* text-shadow:#343a40 1px 1px 2px; */
+    }
+
+    #content p {
+        max-width: 80%;
+        font-size: 1.125rem;
+    }
+
+    #about-me > p > b {
+        font-weight: 900;
     }
 
     #skills {
@@ -621,7 +647,7 @@ nav a:hover {
     #people > div {
         grid-template-rows: repeat(3, auto);
         grid-template-columns: auto;
-        height: 180vh;
+        height: 200vh;
     }
 
     footer {
