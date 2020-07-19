@@ -82,7 +82,7 @@ body {
     overflow-y: auto;
     position: relative;
     overflow-x: hidden;
-    
+
 }
 
 #banner {
@@ -264,6 +264,9 @@ nav a:hover {
     margin-left: 0.3em;
 }
 
+#menu, #menu-container {
+    visibility: hidden;
+}
 #cards {
     width: 100%;
     display: flex;
@@ -439,7 +442,7 @@ nav a:hover {
     grid-row: 3 / span 2;
     grid-column: 1;
 
-} 
+}
 
 #projects a:nth-child(4) {
     grid-column: 1 / span 2;
@@ -534,12 +537,13 @@ nav a:hover {
     #banner, #content {
         position: absolute;
         width: 100vw;
-        left: 0; 
+        left: 0;
     }
 
     #banner {
         top: 0;
         height: 110vh;
+        z-index: 6;
     }
 
     #banner p {
@@ -571,6 +575,67 @@ nav a:hover {
         max-width: 80%;
         font-size: 1.125rem;
     }
+
+    #menu {
+        visibility: visible;
+        width: 100vw;
+        height: 15vh;
+        background: linear-gradient(#dee2e6, transparent);
+        position: fixed;
+        z-index: 5;
+        opacity: 0.95;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.4s;
+    }
+
+    #menu-toggle {
+        width: 100%;
+        position: absolute;
+        filter: none;
+        opacity: 1;
+        text-decoration: none;
+
+    }
+
+    #menu-container {
+        top: 0vh;
+        transform: translate3d(100px, 0, 0);
+        height: 100vh;
+        width: 100vw;
+        background-color: #f3f3f3;
+        opacity: 0;
+        transition: 0.6s;
+        z-index: 2;
+    }
+
+    #menu-container nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        margin: 0; padding: 0;
+        height: 100vh;
+    }
+
+    #menu-container > nav >a {
+        color: #000;
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.25rem;
+
+    }
+
+    #menu-toggle p {
+        font-size: 3.75rem;
+        color: #000;
+        text-align: right;
+        margin-right: 1.125rem;
+        max-width: 20vw;
+        float: right;
+    }
+
 
     #about-me > p > b {
         font-weight: 900;
@@ -607,6 +672,7 @@ nav a:hover {
         display: grid;
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: auto auto;
+        grid-gap: 5px;
     }
 
     #projects a:nth-child(1) {
@@ -623,7 +689,7 @@ nav a:hover {
         grid-row: 3 / span 2;
         grid-column: 1;
 
-    } 
+    }
 
     #projects a:nth-child(4) {
         grid-column: 1 / span 2;
@@ -721,7 +787,7 @@ nav a:hover {
     #banner, #content {
         position: absolute;
         width: 100vw;
-        left: 0; 
+        left: 0;
     }
 
     #banner {
@@ -788,7 +854,7 @@ nav a:hover {
     #skills {
         min-height: 65vh;
     }
-    
+
     #about-me {
         margin-bottom: 0;
     }

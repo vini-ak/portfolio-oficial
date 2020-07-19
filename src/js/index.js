@@ -102,11 +102,12 @@ function portugueseText() {
 
     projectsH1.innerHTML = "PROJETOS"
 
-
+    document.querySelector('.comentario:nth-child(1) > p').innerHTML = 'Vinicius é um cara muito esforçado, talentoso e alegre... É muito bom ter a presença dele no meu dia a dia na UFRPE. Sei que pela determinação e paixão em mudar o mundo através da tecnologia ele vai longe!'
     document.querySelector('.comentario:nth-child(2) > p').innerHTML = 'Vinicius foi meu primeiro menor aprendiz, um rapaz determinado e organizado que se desdobrava em 76km diariamente. É isso mesmo (Cabo, UFRPE e centro do Recife). Foram pouco mais de 1 ano juntos e só posso finalizar dizendo que ele é um guerreiro e merecedor de cada conquista na vida.'
     document.querySelector('.comentario:nth-child(3) > p').innerHTML = 'Trabalhar com Vinícius foi algo muito agregador pra mim já que ele sempre foi aberto a compartilhar o conhecimento que ele tem e aprender junto com a equipe. Sempre foi empenhado em fazer o melhor para o projeto e o bem estar da equipe.'
     document.querySelector('.comentario:nth-child(4) > p').innerHTML = 'Vinícius sabe como resolver problemas de maneira inteligente, tanto da vida, quanto academicamente. É alguém totalmente companheiro e confiável em todo contexto, possuindo uma empatia incomparável, é realmente alguém que eu não abriria mão de ter como amigo!'
-
+    document.querySelector('.comentario:nth-child(5) > p').innerHTML = 'Vinícius é, sem dúvidas, uma das pessoas mais determinadas que cheguei a conhecer. Extremamente focado nos seus objetivos e sempre em busca de uma melhoria pessoal e profissional. Um cara que tenta ajudar e apoiar todas as pessoas que cruzam pelo seu caminho, seja um amigo de anos ou até mesmo uma pessoa que nunca chegou a ver na vida.'
+    document.querySelector('.comentario:nth-child(6) > p').innerHTML = 'Vinícius é um profissional comprometido, busca ajudar o time no que é possível e está sempre disposto a um novo desafio. Trabalhamos cerca de 3 meses juntos mas já pude perceber uma incrível capacidade de realização mesmo em contextos aos quais não estava habituado, aprendendo de forma de rápida, colocando o aprendizado em prática e apresentando resultados extraordinários.'
 }
 
 function buttonOnClick() {
@@ -168,8 +169,20 @@ function hoverLink() {
     })
 }
 
-$('#banner nav a').click(function(e) {
+$('#menu-toggle > p').click(function(e) {
     e.preventDefault();
+
+    toggleCont++
+    if(toggleCont % 2 === 1) {
+        $('#menu-container').css({"transform": "translate3d(0, 0, 0)", "opacity": "1", "position": "fixed", "visibility" : "visible"})
+    } else {
+        $('#menu-container').css({"transform": "translate3d(100px, 0, 0)", "opacity": "0", "visibility" : "hidden"})
+    }
+})
+
+$('nav a').click(function(e) {
+    e.preventDefault();
+
     let id = $(this).attr('href'); // retorna o id para onde vai o link
     let targetOffset = document.querySelector(id).offsetTop
     console.log(targetOffset)
@@ -179,6 +192,7 @@ $('#banner nav a').click(function(e) {
     }, 800);
   })
 
+let toggleCont = 0
 
 buttonOnClick()
 hoverLink()
