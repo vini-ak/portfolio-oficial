@@ -93,7 +93,7 @@ function portugueseText() {
 
     aboutMeH1.innerHTML = "SOBRE MIM"
     aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Prazer! Sou um jovem atrás de desenvolvimento pessoal e profissional. Atualmente ocupo o cargo de <b>Analista de Projetos</b> na Seed a Bit, curso o 4° período de <b>Sistemas de Informação na UFRPE</b> e estou motivado a conseguir meu primeiro estágio em TI."
-    interest.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Tenho investido meu tempo para descobrir novos talentos e tecnologias que possam me ajudar no desenvolvimento de projetos futuros. No momento eu tenho dedicados meus estudos para a parte de <b>Desenvolvimento Web</b>, com um foco maior em tecnologias Front-End, e pretendo entrar mais a fundo em UI/UX design para melhorar a usabilidade e aparência dos meus próximos trabalhos."
+    interest.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Tenho investido meu tempo para descobrir novos talentos e tecnologias que possam me ajudar no desenvolvimento de projetos futuros. No momento eu tenho dedicado meus estudos para a parte de <b>Desenvolvimento Web</b>, com um foco maior em tecnologias Front-End, e pretendo entrar mais a fundo em UI/UX design para melhorar a usabilidade e aparência dos meus próximos trabalhos."
                 
     cardsH1.innerHTML = "HABILIDADES"
     cardsLi1.innerHTML = "Design de Interfaces"
@@ -169,6 +169,7 @@ function hoverLink() {
     })
 }
 
+$()
 $('#menu-toggle > p').click(function(e) {
     e.preventDefault();
 
