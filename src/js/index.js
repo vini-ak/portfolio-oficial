@@ -14,7 +14,7 @@ function englishText() {
     let projectsH1 = document.querySelector('#projects h1')
 
     aboutMeH1.innerHTML = "ABOUT ME"
-    aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Hey there! I'm glad to see you here! I'm just a young guy seeking for personal and profissional improvement. Currently I am at fourth semester of <b>Information Systems at UFRPE</b> and work as a <b>Project Analyst at Seed a Bit Technology</b>. At the moment I'm looking for my first internship in Brazil, but I am also interested in taking a freelancer job or just become your friend :)"
+    aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Hey there! I'm glad to see you here! I'm just a young guy seeking for personal and professional improvement. Currently I am at fourth semester of <b>Information Systems at UFRPE</b> and work as a <b>Project Analyst at Seed a Bit Technology</b>. At the moment I'm looking for my first internship in Brazil, but I am also interested in taking a freelancer job or just become your friend :)"
     interest.innerHTML =  "&nbsp;&nbsp;&nbsp;&nbsp;I am a knowledge lover and I usually spend my time studying content of different areas (such as Data Science) to find out new abilities. Nowdays I dedicate my days studing <b>Web Development</b> (more focused on front-end technologies) and I intend to go deep into UI/UX design to upgrade the appearance and usability of my next projects."
 
     document.querySelector('#banner nav .nav-link:nth-child(1) a').innerHTML = "About me"
@@ -46,6 +46,15 @@ function englishText() {
     cardsLi3.innerHTML = "UX Researches"
 
     projectsH1.innerHTML = "PROJECTS"
+
+    document.querySelector('#people > h1').innerHTML = "PEOPLE"
+    document.querySelector('.comentario:nth-child(1) > p').innerHTML = 'Vinícius is a hardworking, very talented and happy guy. It\'s awesome having his presence in my daily life at college. I\'m pretty sure that due to his determination and love for changing the world through tecnology, he will go far!'
+    document.querySelector('.comentario:nth-child(2) > p').innerHTML = 'Vini is a determinated and organized boy who used to take 76km in a daily routine when whe worked with us (including from home, to UFRPE, to work and finally go back home). We worked together for over a year and I can tell he is a fighter and deserves every single victory on his life.'
+    document.querySelector('.comentario:nth-child(3) > p').innerHTML = 'Work with Vini is something that improves me a lot, once he has always been open to share his knowledge as well as learn with other teammates. He is always committed to doing the best for the project and for the team welfare.'
+    document.querySelector('.comentario:nth-child(4) > p').innerHTML = 'Vinícius knows how to solve problems in a smart way, both in particular life and academically. He\'s companion, trustworthy and has and incomparable empathy. He is completely someone who I would never give up being a friend!'
+    document.querySelector('.comentario:nth-child(5) > p').innerHTML = 'Vinícius is, with no doubts, one of the most determinated people I have ever met. Extremely focused on his goals and always chasing personal and professional. He is the kind of guy who tries to help and support anyone who crosses his path, no matter if it is a long-time friend or just a person he had never seen before.'
+    document.querySelector('.comentario:nth-child(6) > p').innerHTML = 'Vinícius is a professional commited that tries to help the team on anything he can. In only three months of familiarity I could notice an incredible capacity of accomplish goals and adaptation to different contexts, besides learn quickly.'
+
 
 
     document.querySelector('#rodape > h5').innerHTML = "Handcrafted by me © Vinícius Vieira"
@@ -102,12 +111,13 @@ function portugueseText() {
 
     projectsH1.innerHTML = "PROJETOS"
 
+    document.querySelector('#people > h1').innerHTML = "COLEGAS"
     document.querySelector('.comentario:nth-child(1) > p').innerHTML = 'Vinicius é um cara muito esforçado, talentoso e alegre... É muito bom ter a presença dele no meu dia a dia na UFRPE. Sei que pela determinação e paixão em mudar o mundo através da tecnologia ele vai longe!'
-    document.querySelector('.comentario:nth-child(2) > p').innerHTML = 'Vinicius foi meu primeiro menor aprendiz, um rapaz determinado e organizado que se desdobrava em 76km diariamente. É isso mesmo (Cabo, UFRPE e centro do Recife). Foram pouco mais de 1 ano juntos e só posso finalizar dizendo que ele é um guerreiro e merecedor de cada conquista na vida.'
+    document.querySelector('.comentario:nth-child(2) > p').innerHTML = 'Vinicius foi meu primeiro jovem aprendiz, um rapaz determinado e organizado que se desdobrava em 76km diariamente. É isso mesmo (Cabo, UFRPE e centro do Recife)! Foram pouco mais de um ano juntos e só posso dizer que ele é um guerreiro e merecedor de cada conquista.'
     document.querySelector('.comentario:nth-child(3) > p').innerHTML = 'Trabalhar com Vinícius foi algo muito agregador pra mim já que ele sempre foi aberto a compartilhar o conhecimento que ele tem e aprender junto com a equipe. Sempre foi empenhado em fazer o melhor para o projeto e o bem estar da equipe.'
     document.querySelector('.comentario:nth-child(4) > p').innerHTML = 'Vinícius sabe como resolver problemas de maneira inteligente, tanto da vida, quanto academicamente. É alguém totalmente companheiro e confiável em todo contexto, possuindo uma empatia incomparável, é realmente alguém que eu não abriria mão de ter como amigo!'
     document.querySelector('.comentario:nth-child(5) > p').innerHTML = 'Vinícius é, sem dúvidas, uma das pessoas mais determinadas que cheguei a conhecer. Extremamente focado nos seus objetivos e sempre em busca de uma melhoria pessoal e profissional. Um cara que tenta ajudar e apoiar todas as pessoas que cruzam pelo seu caminho, seja um amigo de anos ou até mesmo uma pessoa que nunca chegou a ver na vida.'
-    document.querySelector('.comentario:nth-child(6) > p').innerHTML = 'Vinícius é um profissional comprometido, busca ajudar o time no que é possível e está sempre disposto a um novo desafio. Trabalhamos cerca de 3 meses juntos mas já pude perceber uma incrível capacidade de realização mesmo em contextos aos quais não estava habituado, aprendendo de forma de rápida, colocando o aprendizado em prática e apresentando resultados extraordinários.'
+    document.querySelector('.comentario:nth-child(6) > p').innerHTML = 'Vinícius é um profissional comprometido e que busca ajudar o time no que é possível. Em três meses de convivência, pude perceber uma incrível capacidade de realização e adaptação a diferentes contextos, além de aprender rapidamente.'
 }
 
 function buttonOnClick() {

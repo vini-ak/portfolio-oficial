@@ -284,7 +284,7 @@ nav a:hover {
     flex-flow: column wrap;
     align-items: center;
     padding-top: 4%;
-    transition: 0.3s;
+    transition: 0.4s ease-out;
 }
 
 #cards > div > img {
@@ -527,7 +527,8 @@ nav a:hover {
 
     #initial button {
         width: 80vw;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        padding-left: 12px;
     }
 
     #page {
@@ -628,7 +629,7 @@ nav a:hover {
     }
 
     #menu-toggle p {
-        font-size: 3.75rem;
+        font-size: min(3.75rem, 15vw);
         color: #000;
         text-align: right;
         margin-right: 1.125rem;
@@ -655,8 +656,8 @@ nav a:hover {
     }
 
     #cards > div {
-        height: 60vh;
-        width: 60vw;
+        height: max(300px, 60vh);
+        width: max(60vw, 200px);
         justify-content: center;
     }
 
@@ -666,6 +667,10 @@ nav a:hover {
 
     #cards > div:nth-child(2) {
         margin: 3vh;
+    }
+
+    #cards li {
+        font-size: 1.5rem;
     }
 
     #projects > div {
@@ -707,13 +712,13 @@ nav a:hover {
     }
 
     .comentario {
-        height: 59vh;
+        height: max(59vh, 350px);
     }
 
     #people > div {
         grid-template-rows: repeat(3, auto);
         grid-template-columns: auto;
-        height: 200vh;
+        height: max(200vh, 1200px);
     }
 
     footer {
