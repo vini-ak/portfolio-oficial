@@ -179,7 +179,6 @@ function hoverLink() {
     })
 }
 
-$()
 $('#menu-toggle > p').click(function(e) {
     e.preventDefault();
 
@@ -191,6 +190,7 @@ $('#menu-toggle > p').click(function(e) {
     }
 })
 
+/*
 $('nav a').click(function(e) {
     e.preventDefault();
 
@@ -202,7 +202,7 @@ $('nav a').click(function(e) {
       scrollTop: targetOffset
     }, 800);
   })
-
+*/
 let toggleCont = 0
 
 buttonOnClick()

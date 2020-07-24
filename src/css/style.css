@@ -523,7 +523,7 @@ nav a:hover {
 }
 
 #rodape h5 {
-    font-size: 1.1em;
+    font-size: 0.875em;
     color: #dee2e6;
     padding: 0.15em 0;
 }
@@ -534,6 +534,7 @@ nav a:hover {
     align-items: center;
     justify-content: space-between;
     margin: 0 7vw;
+    margin-bottom: 4vh;
 }
 
 #footer-ilustration > img {
@@ -544,10 +545,10 @@ nav a:hover {
     max-width: 45%;
 }
 
-
 #footer-content {
     display: none;
     text-align: center;
+    position: relative;
 }
 
 #footer-content > p{
@@ -823,7 +824,7 @@ nav a:hover {
 
     #footer-ilustration {
         position: relative;
-        margin-top: 10vh;
+        margin: 10vh 0;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -841,18 +842,26 @@ nav a:hover {
     #footer-content {
         display: flex;
         flex-flow: column wrap;
+        align-items: center;
         background-color: #97979B;
         height: 30vh;
         width: 100vw;
     }
 
+    #footer-logo {
+        width: 30vw;
+        position: absolute;
+        top: -15vw;
+    }
+
     #footer-redes-sociais {
-        padding: 0 2.5vw;
-        margin: 3vh 0;
+        width: 90%;
+        margin-top: 12.5vh;
+        padding: 0;
     }
 
     #footer-redes-sociais > a {
-        height: 45px; width: 45px;
+        height: 48px; width: 48px;
     }
 
     #footer-content > p {
@@ -865,21 +874,6 @@ nav a:hover {
         margin: 0.7vh 0;
     }
 
-    .github {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer-github {
-        color: #000;
-        width: 40%;
-        height: 4vh;
-        font-size: 1.25rem;
-    }
-
     #rodape {
         position: absolute;
         font-size: 0.75rem;
@@ -887,12 +881,12 @@ nav a:hover {
 
 }
 
-@media screen and (max-width: 1100px) not (orientation: portrait), screen not (orientation: portrait) and (max-height: 550px) {
+@media screen and (max-width: 1100px) and (orientation: landscape), screen and (orientation: landscape) and (max-height: 550px) {
     #people > div {
         display: grid;
         grid-template-rows: repeat(1fr, 6);
         grid-template-columns: auto;
-        height: 270vh;
+        height: 300vh;
         grid-gap: 2%;
     }
 
@@ -901,11 +895,8 @@ nav a:hover {
     }
 }
 
-<<<<<<< HEAD
-@media screen and (max-height: 550px) not (orientation: portrait) , screen not (orientation: portrait) and (max-width: 500px) {
-=======
-@media screen and (max-height: 550px), screen and (max-width:  900px) {
->>>>>>> 430703f95da13c56f3022ded98a4be8042b73681
+@media screen and (max-height: 550px) and (orientation: landscape) , screen and (orientation: landscape) and (max-width: 500px) {
+
     #cards { 
         height: 115vh;
     }
@@ -1094,11 +1085,36 @@ nav a:hover {
         height: 35vh;
     }
 
+    #footer-ilustration {
+        margin-bottom: 10vh;
+    }
+
     #footer-content {
         display: flex;
         flex-direction: column;
         height: 25vh;
         background-color: #97979B;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+    }
+
+    #footer-redes-sociais {
+        padding: 0;
+        width: 65%;
+        margin-top: 4vh;
+    }
+
+    #footer-logo {
+        visibility: visible;
+        width: 15vw;
+        top: -20%;
+        position: absolute;
+    }
+
+    .github {
+        visibility: hidden;
     }
 
 }
