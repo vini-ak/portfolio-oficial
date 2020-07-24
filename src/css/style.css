@@ -901,40 +901,46 @@ nav a:hover {
     }
 }
 
+<<<<<<< HEAD
 @media screen and (max-height: 550px) not (orientation: portrait) , screen not (orientation: portrait) and (max-width: 500px) {
+=======
+@media screen and (max-height: 550px), screen and (max-width:  900px) {
+>>>>>>> 430703f95da13c56f3022ded98a4be8042b73681
     #cards { 
-        height: 85vh;
+        height: 115vh;
     }
     #cards > div {
         width: 80%;
-        height: 25vh;
+        height: 35vh;
         display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
         grid-gap: 4vh;
         padding: 0;
     }
 
     #cards > div > img {
-        max-height: 80%;
-        width: auto;
-        grid-row: 1 / span 2;
+        width: 60px;
+        max-width: 60%;
+        grid-row: 1;
         grid-column: 1;
+        display: flex;
+        align-items: center;
     }
 
     #cards > div > h3 {
-        grid-row: 3;
+        grid-row: 2;
         grid-column: 1;
         margin: 0;
     }
 
     #cards > div > ul {
-        grid-row: 1 / span 3;
-        grid-column: 2 / span 3;
+        grid-row: 1 / span 2;
+        grid-column: 2;
     }
 
     #cards > div:nth-child(3) > ul {
-        margin: 0;
+        margin-left: 20%;
     }
 
 }
