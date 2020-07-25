@@ -653,6 +653,13 @@ nav a:hover {
         font-size: 1.125rem;
     }
 
+    #about-me p {
+        max-width: 100%;
+        padding: 0 10vw;
+        font-size: 1.125rem;
+    }
+
+
     #menu {
         visibility: visible;
         width: 100vw;
@@ -713,7 +720,7 @@ nav a:hover {
         float: right;
     }
 
-    #about-me {
+    #about-me, #projects {
         margin-bottom: 0;
     }
 
@@ -819,10 +826,19 @@ nav a:hover {
         height: max(59vh, 350px);
     }
 
+    #people {
+        margin-top: 0;
+        padding-top: 10vh;
+    }
+
     #people > div {
         grid-template-rows: repeat(3, auto);
         grid-template-columns: auto;
         height: max(200vh, 1200px);
+    }
+
+    .comentario h5 {
+        font-size: 0.875rem;
     }
 
     #footer-ilustration {
@@ -859,12 +875,12 @@ nav a:hover {
 
     #footer-redes-sociais {
         width: 90%;
-        margin-top: 9vh;
+        margin-top: 7vh;
         padding: 0;
     }
 
     #footer-redes-sociais > a {
-        height: 55px; width: 55px;
+        height: 48px; width: 48px;
     }
 
     #footer-content > p {
