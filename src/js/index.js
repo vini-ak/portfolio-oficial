@@ -179,16 +179,24 @@ function hoverLink() {
     })
 }
 
+$('#menu-container > nav > a').click(function(e) {
+    toggleAdder();
+    console.log('entrei papai');
+})
+
 $('#menu-toggle > p').click(function(e) {
     e.preventDefault();
+    toggleAdder();
+})
 
+function toggleAdder() {
     toggleCont++
     if(toggleCont % 2 === 1) {
         $('#menu-container').css({"transform": "translate3d(0, 0, 0)", "opacity": "1", "position": "fixed", "visibility" : "visible"})
     } else {
         $('#menu-container').css({"transform": "translate3d(100px, 0, 0)", "opacity": "0", "visibility" : "hidden"})
     }
-})
+}
 
 /*
 $('nav a').click(function(e) {
