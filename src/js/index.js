@@ -21,6 +21,13 @@ function englishText() {
     document.querySelector('#banner nav .nav-link:nth-child(2) a').innerHTML = "Skills"
     document.querySelector('#banner nav .nav-link:nth-child(3) a').innerHTML = "Projects"
     document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "People"
+   
+    /* MENU TOGGLE */ 
+    document.querySelector('#menu-container > nav > a:nth-child(1)').innerHTML = "ABOUT ME"
+    document.querySelector('#menu-container > nav > a:nth-child(2)').innerHTML = "SKILLS"
+    document.querySelector('#menu-container > nav > a:nth-child(3)').innerHTML = "PROJECTS"
+    document.querySelector('#menu-container > nav > a:nth-child(4)').innerHTML = "PEOPLE"
+
     document.querySelector('#banner > h4').innerHTML = "Social Media"
 
     if(screen.width <= 600) {
@@ -46,16 +53,30 @@ function englishText() {
     cardsLi3.innerHTML = "UX Researches"
 
     projectsH1.innerHTML = "PROJECTS"
+    document.querySelector('.project-info > a > p').innerHTML = "SEE ON GITHUB"
+
 
     document.querySelector('#people > h1').innerHTML = "PEOPLE"
+    
     document.querySelector('.comentario:nth-child(1) > p').innerHTML = 'Vinícius is a hardworking, very talented and happy guy. It\'s awesome having his presence in my daily life at college. I\'m pretty sure that due to his determination and love for changing the world through tecnology, he will go far!'
+    document.querySelector('.comentario:nth-child(1) > .personal > h5').innerHTML = 'Intern at Senai'
+
     document.querySelector('.comentario:nth-child(2) > p').innerHTML = 'Vini is a determinated and organized boy who used to take 76km in a daily routine when whe worked with us (including from home, to UFRPE, to work and finally go back home). We worked together for over a year and I can tell he is a fighter and deserves every single victory on his life.'
+    document.querySelector('.comentario:nth-child(2) > .personal > h5').innerHTML = 'Coordinator at SiM Clinic'
+
     document.querySelector('.comentario:nth-child(3) > p').innerHTML = 'Work with Vini is something that improves me a lot, once he has always been open to share his knowledge as well as learn with other teammates. He is always committed to doing the best for the project and for the team welfare.'
+    document.querySelector('.comentario:nth-child(3) > .personal > h5').innerHTML = 'Project Analyst at Seed a Bit'
+
     document.querySelector('.comentario:nth-child(4) > p').innerHTML = 'Vinícius knows how to solve problems in a smart way, both in particular life and academically. He\'s companion, trustworthy and has and incomparable empathy. He is completely someone who I would never give up being a friend!'
+    document.querySelector('.comentario:nth-child(4) > .personal > h5').innerHTML = 'Intern at MC2'
+    
     document.querySelector('.comentario:nth-child(5) > p').innerHTML = 'Vinícius is, with no doubts, one of the most determinated people I have ever met. Extremely focused on his goals and always chasing personal and professional. He is the kind of guy who tries to help and support anyone who crosses his path, no matter if it is a long-time friend or just a person he had never seen before.'
+    document.querySelector('.comentario:nth-child(5) > .personal > h5').innerHTML = 'Lovely friend'
+    
     document.querySelector('.comentario:nth-child(6) > p').innerHTML = 'Vinícius is a professional commited that tries to help the team on anything he can. In only three months of familiarity I could notice an incredible capacity of accomplish goals and adaptation to different contexts, besides learn quickly.'
+    document.querySelector('.comentario:nth-child(6) > .personal > h5').innerHTML = 'Project Manager at Seed a Bit'
 
-
+    document.querySelector('#footer-ilustration > h2').innerHTML = "Let\'s talk? Mail me or text me in any social media! ;)"
 
     document.querySelector('#rodape > h5').innerHTML = "Handcrafted by me © Vinícius Vieira"
 }
@@ -80,6 +101,13 @@ function portugueseText() {
     document.querySelector('#banner nav .nav-link:nth-child(2) a').innerHTML = "Habilidades"
     document.querySelector('#banner nav .nav-link:nth-child(3) a').innerHTML = "Projetos"
     document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "Colegas"
+
+    /* MENU TOGGLE */
+    document.querySelector('#menu-container > nav > a:nth-child(1)').innerHTML = "SOBRE MIM"
+    document.querySelector('#menu-container > nav > a:nth-child(2)').innerHTML = "HABILIDADES"
+    document.querySelector('#menu-container > nav > a:nth-child(3)').innerHTML = "PROJETOS"
+    document.querySelector('#menu-container > nav > a:nth-child(4)').innerHTML = "COLEGAS"
+
     document.querySelector('#banner > h4').innerHTML = "Redes Sociais"
 
     if(screen.width <= 600) {
@@ -110,14 +138,30 @@ function portugueseText() {
     cardsLi3.innerHTML = "Pesquisa com usuários"
 
     projectsH1.innerHTML = "PROJETOS"
+    document.querySelector('.project-info > a > p').innerHTML = "VER REPOSITÓRIO"
 
     document.querySelector('#people > h1').innerHTML = "COLEGAS"
+    
     document.querySelector('.comentario:nth-child(1) > p').innerHTML = 'Vinicius é um cara muito esforçado, talentoso e alegre... É muito bom ter a presença dele no meu dia a dia na UFRPE. Sei que pela determinação e paixão em mudar o mundo através da tecnologia ele vai longe!'
+    document.querySelector('.comentario:nth-child(1) > .personal > h5').innerHTML = 'Estagiária no Senai'
+    
     document.querySelector('.comentario:nth-child(2) > p').innerHTML = 'Vinicius foi meu primeiro jovem aprendiz, um rapaz determinado e organizado que se desdobrava em 76km diariamente. É isso mesmo (Cabo, UFRPE e centro do Recife)! Foram pouco mais de um ano juntos e só posso dizer que ele é um guerreiro e merecedor de cada conquista.'
+    document.querySelector('.comentario:nth-child(2) > .personal > h5').innerHTML = 'Coordenadora na Clínica SiM'
+
     document.querySelector('.comentario:nth-child(3) > p').innerHTML = 'Trabalhar com Vinícius foi algo muito agregador pra mim já que ele sempre foi aberto a compartilhar o conhecimento que ele tem e aprender junto com a equipe. Sempre foi empenhado em fazer o melhor para o projeto e o bem estar da equipe.'
+    document.querySelector('.comentario:nth-child(3) > .personal > h5').innerHTML = 'Analista de Projetos na Seed a Bit'
+
     document.querySelector('.comentario:nth-child(4) > p').innerHTML = 'Vinícius sabe como resolver problemas de maneira inteligente, tanto da vida, quanto academicamente. É alguém totalmente companheiro e confiável em todo contexto, possuindo uma empatia incomparável, é realmente alguém que eu não abriria mão de ter como amigo!'
+    document.querySelector('.comentario:nth-child(4) > .personal > h5').innerHTML = 'Estagiário na MC2'
+
     document.querySelector('.comentario:nth-child(5) > p').innerHTML = 'Vinícius é, sem dúvidas, uma das pessoas mais determinadas que cheguei a conhecer. Extremamente focado nos seus objetivos e sempre em busca de uma melhoria pessoal e profissional. Um cara que tenta ajudar e apoiar todas as pessoas que cruzam pelo seu caminho, seja um amigo de anos ou até mesmo uma pessoa que nunca chegou a ver na vida.'
+    document.querySelector('.comentario:nth-child(5) > .personal > h5').innerHTML = 'Amiga mais próxima'
+
     document.querySelector('.comentario:nth-child(6) > p').innerHTML = 'Vinícius é um profissional comprometido e que busca ajudar o time no que é possível. Em três meses de convivência, pude perceber uma incrível capacidade de realização e adaptação a diferentes contextos, além de aprender rapidamente.'
+    document.querySelector('.comentario:nth-child(6) > .personal> h5').innerHTML = 'Gerente de Projetos na Seed a Bit'
+
+    document.querySelector('#footer-ilustration > h2').innerHTML = "Vamos conversar? Me chame em alguma rede social! ;)"
+
 }
 
 function buttonOnClick() {
@@ -190,6 +234,7 @@ $('#menu-toggle > p').click(function(e) {
 })
 
 function toggleAdder() {
+    /* Função para abrir e fechar o menu toggle */
     toggleCont++
     if(toggleCont % 2 === 1) {
         $('#menu-container').css({"transform": "translate3d(0, 0, 0)", "opacity": "1", "position": "fixed", "visibility" : "visible"})
@@ -213,5 +258,9 @@ $('nav a').click(function(e) {
 */
 let toggleCont = 0
 
+if(!window.language) {
+    window.language = 'pt-br'
+    portugueseText()
+}
 buttonOnClick()
 hoverLink()
