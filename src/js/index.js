@@ -53,7 +53,9 @@ function englishText() {
     cardsLi3.innerHTML = "UX Researches"
 
     projectsH1.innerHTML = "PROJECTS"
-    document.querySelector('.project-info > a > p').innerHTML = "SEE ON GITHUB"
+    document.querySelectorAll('.project-info > a > p').forEach((info) => {
+        info.innerHTML = "SEE ON GITHUB"
+    })
 
 
     document.querySelector('#people > h1').innerHTML = "PEOPLE"
@@ -138,7 +140,9 @@ function portugueseText() {
     cardsLi3.innerHTML = "Pesquisa com usuários"
 
     projectsH1.innerHTML = "PROJETOS"
-    document.querySelector('.project-info > a > p').innerHTML = "VER REPOSITÓRIO"
+    document.querySelectorAll('.project-info > a > p').forEach((info) => {
+        info.innerHTML = "VER REPOSITÓRIO"
+    })
 
     document.querySelector('#people > h1').innerHTML = "COLEGAS"
     
