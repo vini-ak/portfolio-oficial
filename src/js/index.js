@@ -169,6 +169,7 @@ function portugueseText() {
 }
 
 function buttonOnClick() {
+    /* Captura a linguagem do botão escolhido na tela inicial e faz animações acontecerem. */
     document.querySelectorAll('button').forEach((button) => {
         button.onclick = () => {
             let initial = document.querySelector('#initial')
@@ -199,14 +200,13 @@ function buttonOnClick() {
 
             if(window.language == 'pt-br') {
                 portugueseText()
-                console.log("Texto em Português")
 
             } else if (window.language == 'en') {
                 englishText()
-                console.log("English Text")
             }
 
-
+            // Confirmando que uma linguagem foi escolhida
+            window.languageChose = true
         }
 
     })
@@ -214,6 +214,7 @@ function buttonOnClick() {
 }
 
 function hoverLink() {
+    /* Efeito do hover dos links do banner. */
     document.querySelectorAll(".nav-link > a").forEach(link => {
         link.onmouseenter = () => {
             link.nextElementSibling.style.transform = "translateX(0px)"
@@ -227,16 +228,6 @@ function hoverLink() {
     })
 }
 
-$('#menu-container > nav > a').click(function(e) {
-    toggleAdder();
-    console.log('entrei papai');
-})
-
-$('#menu-toggle > p').click(function(e) {
-    e.preventDefault();
-    toggleAdder();
-})
-
 function toggleAdder() {
     /* Função para abrir e fechar o menu toggle */
     toggleCont++
@@ -247,13 +238,43 @@ function toggleAdder() {
     }
 }
 
+function orientationChange() {
+    /* Função que verifica a troca de orientação da tela. */
+    const event = "onorientationchange" in window ? "orientationchange" : "resize"
+    window.addEventListener(event, () => {
+        if(window.languageChose) {
+            // A função só será executada caso o usuário tenha escolhido uma linguagem no botão inicial
+            const banner = document.querySelector('#banner')
+
+            if(screen.orientation.type == "landscape-primary") {
+                banner.style.position = "absolute"
+            } else if(screen.orientation.type == "portrait-primary") {
+                banner.style.position = "fixed"
+            } else {
+                console.log('not detected')
+            }
+
+        }
+        
+    })
+}
+
+$('#menu-container > nav > a').click(function(e) {
+    toggleAdder();
+})
+
+$('#menu-toggle > p').click(function(e) {
+    e.preventDefault();
+    toggleAdder();
+})
+
+
 /*
 $('nav a').click(function(e) {
     e.preventDefault();
 
     let id = $(this).attr('href'); // retorna o id para onde vai o link
     let targetOffset = document.querySelector(id).offsetTop
-    console.log(targetOffset)
 
     $('html, body').animate({
       scrollTop: targetOffset
@@ -266,5 +287,7 @@ if(!window.language) {
     window.language = 'pt-br'
     portugueseText()
 }
+
 buttonOnClick()
 hoverLink()
+orientationChange()    
