@@ -247,9 +247,9 @@ function orientationChange() {
             // A função só será executada caso o usuário tenha escolhido uma linguagem no botão inicial
             const banner = document.querySelector('#banner')
 
-            if(screen.orientation.type == "landscape-primary") {
+            if(screen.orientation.type == "portrait-primary") {
                 banner.style.position = "absolute"
-            } else if(screen.orientation.type == "portrait-primary") {
+            } else if(screen.orientation.type == "landscape-primary") {
                 banner.style.position = "fixed"
             } else {
                 console.log('not detected')
