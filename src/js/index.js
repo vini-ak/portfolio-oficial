@@ -170,6 +170,7 @@ function portugueseText() {
 
 function buttonOnClick() {
     /* Captura a linguagem do botão escolhido na tela inicial e faz animações acontecerem. */
+    window.previousOrientation = screen.orientation.type
     document.querySelectorAll('button').forEach((button) => {
         button.onclick = () => {
             let initial = document.querySelector('#initial')
@@ -242,7 +243,7 @@ function orientationChange() {
     /* Função que verifica a troca de orientação da tela. */
     const event = "onorientationchange" in window ? "orientationchange" : "resize"
     window.addEventListener(event, () => {
-        if(window.languageChose) {
+        if(window.languageChose && window.previousOrientation != screen.orientation.type) {
             // A função só será executada caso o usuário tenha escolhido uma linguagem no botão inicial
             const banner = document.querySelector('#banner')
 
@@ -253,6 +254,8 @@ function orientationChange() {
             } else {
                 console.log('not detected')
             }
+
+            window.previousOrientation = screen.orientation.type
 
         }
         
