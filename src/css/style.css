@@ -1179,3 +1179,23 @@ nav a:hover {
 
 }
 
+/* MOBILE LANDSCAPE */
+@media screen and (max-height: 550px) and (orientation: landscape) {
+    #banner nav, #banner h4 {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+    }
+
+    #profile > img {
+        width: 35%;
+    }
+
+    #social-media {
+        margin-top: 5vh;
+    }
+
+    #banner p {
+        font-size: 1.175rem;
+    }
+}

@@ -12,11 +12,11 @@ function englishText() {
 
 
     let projectsH1 = document.querySelector('#projects h1')
-    document.querySelector('#projects > .project:nth-child(1) > project-info > h4').innerHTML = "Flappy Bird"
-    document.querySelector('#projects > .project:nth-child(2) > project-info > h4').innerHTML = ""
-    document.querySelector('#projects > .project:nth-child(3) > project-info > h4').innerHTML = ""
-    document.querySelector('#projects > .project:nth-child(4) > project-info > h4').innerHTML = "Shopping Cart"
-    document.querySelector('#projects > .project:nth-child(5) > project-info > h4').innerHTML = "Currency Converter"
+    document.querySelector('#projects .project:nth-child(1) > .project-info > h4').innerHTML = "Flappy Bird"
+    // document.querySelector('#projects .project:nth-child(2) > .project-info > h4').innerHTML = ""
+    // document.querySelector('#projects .project:nth-child(3) > .project-info > h4').innerHTML = ""
+    document.querySelector('#projects .project:nth-child(4) > .project-info > h4').innerHTML = "Shopping Cart"
+    document.querySelector('#projects .project:nth-child(5) > .project-info > h4').innerHTML = "Currency Converter"
 
     aboutMeH1.innerHTML = "ABOUT ME"
     aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Hey there! I'm glad to see you here! I'm just a young guy seeking for personal and professional improvement. Currently I am at fourth semester of <b>Information Systems at UFRPE</b> and work as a <b>Project Analyst at Seed a Bit Technology</b>. At the moment I'm looking for my first internship in Brazil, but I am also interested in taking a freelancer job or just become your friend :)"
@@ -102,6 +102,11 @@ function portugueseText() {
 
 
     let projectsH1 = document.querySelector('#projects h1')
+    document.querySelector('#projects .project:nth-child(1) > .project-info > h4').innerHTML = "Flappy Bird"
+    // document.querySelector('#projects .project:nth-child(2) > .project-info > h4').innerHTML = ""
+    // document.querySelector('#projects .project:nth-child(3) > .project-info > h4').innerHTML = ""
+    document.querySelector('#projects .project:nth-child(4) > .project-info > h4').innerHTML = "Carrinho de Compras"
+    document.querySelector('#projects .project:nth-child(5) > .project-info > h4').innerHTML = "Conversor de Moedas"
 
 
     document.querySelector('#banner nav .nav-link:nth-child(1) a').innerHTML = "Sobre mim"
