@@ -417,12 +417,13 @@ nav a:hover {
 }
 
 .project img {
-    width: 100%;
-    height: auto;
     position: absolute;
     top: 0;
     filter: brightness(80%);
     transition: 0.5s ease-in-out;
+    width: 100%;
+    object-fit: fill;
+    box-sizing: border-box;
 }
 
 .project-info {
@@ -1178,62 +1179,3 @@ nav a:hover {
 
 }
 
-
-/* MOBILE HORIZONTAL */
-
-@media screen and (max-height: 550px) and (orientation: landscape) {
-
-    #initial > img {
-        width: 12vw;
-    }
-
-    #initial  > h1 {
-        font-size: 1.75rem;
-    }
-
-    #initial > button {
-        margin-top: 20px;
-        font-size: 1.5rem;
-        padding-left: 12px;
-        min-height: 50px;
-    }
-
-    #banner {
-        width: 35vw;
-    }
-
-    #banner h4 {
-        display: none;
-    }
-
-    #content {
-        left: 35vw;
-    }
-
-    #profile > img {
-        width: 35%;
-    }
-    #profile > h3 {
-        font-size: calc(0.75em + 1vh);
-    }
-
-    #banner nav {
-        padding: 5px 0;
-    }
-
-    .project > img {
-        transition: none;
-        filter: brightness(50%) blur(0.15px);
-        transform: scale(1.04);
-    }
-
-    .project-info {
-        transition: none;
-        opacity: 1;
-    }
-
-    .project-info > a {
-        min-width: 150px;
-        min-height: 45px;
-    }
-}
