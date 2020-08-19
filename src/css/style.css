@@ -426,6 +426,16 @@ nav a:hover {
     box-sizing: border-box;
 }
 
+.project:nth-child(2) img, .project:nth-child(3) img {
+    position: absolute;
+    top: 0;
+    filter: brightness(80%);
+    transition: 0.5s ease-in-out;
+    height: 100%;
+    object-fit: fill;
+    box-sizing: border-box;
+}
+
 .project-info {
     display: flex;
     flex-flow: column;
