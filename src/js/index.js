@@ -28,10 +28,10 @@ function englishText() {
     document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "People"
    
     /* MENU TOGGLE */ 
-    document.querySelector('#menu-container > nav > a:nth-child(1)').innerHTML = "ABOUT ME"
-    document.querySelector('#menu-container > nav > a:nth-child(2)').innerHTML = "SKILLS"
-    document.querySelector('#menu-container > nav > a:nth-child(3)').innerHTML = "PROJECTS"
-    document.querySelector('#menu-container > nav > a:nth-child(4)').innerHTML = "PEOPLE"
+    document.querySelector('#menu-container > nav > a:nth-child(2)').innerHTML = "ABOUT ME"
+    document.querySelector('#menu-container > nav > a:nth-child(3)').innerHTML = "SKILLS"
+    document.querySelector('#menu-container > nav > a:nth-child(4)').innerHTML = "PROJECTS"
+    document.querySelector('#menu-container > nav > a:nth-child(5)').innerHTML = "PEOPLE"
 
     document.querySelector('#banner > h4').innerHTML = "Social Media"
 
@@ -103,8 +103,6 @@ function portugueseText() {
 
     let projectsH1 = document.querySelector('#projects h1')
     document.querySelector('#projects .project:nth-child(1) > .project-info > h4').innerHTML = "Flappy Bird"
-    // document.querySelector('#projects .project:nth-child(2) > .project-info > h4').innerHTML = ""
-    // document.querySelector('#projects .project:nth-child(3) > .project-info > h4').innerHTML = ""
     document.querySelector('#projects .project:nth-child(4) > .project-info > h4').innerHTML = "Carrinho de Compras"
     document.querySelector('#projects .project:nth-child(5) > .project-info > h4').innerHTML = "Conversor de Moedas"
 
@@ -115,10 +113,10 @@ function portugueseText() {
     document.querySelector('#banner nav .nav-link:nth-child(4) a').innerHTML = "Colegas"
 
     /* MENU TOGGLE */
-    document.querySelector('#menu-container > nav > a:nth-child(1)').innerHTML = "SOBRE MIM"
-    document.querySelector('#menu-container > nav > a:nth-child(2)').innerHTML = "HABILIDADES"
-    document.querySelector('#menu-container > nav > a:nth-child(3)').innerHTML = "PROJETOS"
-    document.querySelector('#menu-container > nav > a:nth-child(4)').innerHTML = "COLEGAS"
+    document.querySelector('#menu-container > nav > a:nth-child(2)').innerHTML = "SOBRE MIM"
+    document.querySelector('#menu-container > nav > a:nth-child(3)').innerHTML = "HABILIDADES"
+    document.querySelector('#menu-container > nav > a:nth-child(4)').innerHTML = "PROJETOS"
+    document.querySelector('#menu-container > nav > a:nth-child(5)').innerHTML = "COLEGAS"
 
     document.querySelector('#banner > h4').innerHTML = "Redes Sociais"
 
@@ -142,7 +140,7 @@ function portugueseText() {
 
     aboutMeH1.innerHTML = "SOBRE MIM"
     aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Prazer! Sou um jovem atrás de desenvolvimento pessoal e profissional. Atualmente ocupo o cargo de <b>Analista de Projetos</b> na Seed a Bit, curso o 4° período de <b>Sistemas de Informação na UFRPE</b> e estou motivado a conseguir meu primeiro estágio em TI."
-    interest.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Tenho investido meu tempo para descobrir novos talentos e tecnologias que possam me ajudar no desenvolvimento de projetos futuros. No momento eu tenho dedicado meus estudos para a parte de <b>Desenvolvimento Web</b>, com um foco maior em tecnologias Front-End, e pretendo entrar mais a fundo em UI/UX design para melhorar a usabilidade e aparência dos meus próximos trabalhos."
+    interest.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Tenho investido meu tempo para descobrir novos talentos e tecnologias que possam me ajudar no desenvolvimento de projetos futuros. No momento, tenho dedicado meus estudos para a parte de <b>Desenvolvimento Web</b>, com um foco maior em tecnologias Front-End, e pretendo entrar mais a fundo em UI/UX design para melhorar a usabilidade e aparência dos meus próximos trabalhos."
                 
     cardsH1.innerHTML = "HABILIDADES"
     cardsLi1.innerHTML = "Design de Interfaces"
@@ -175,7 +173,7 @@ function portugueseText() {
     document.querySelector('.comentario:nth-child(6) > .personal> h5').innerHTML = 'Gerente de Projetos na Seed a Bit'
 
     document.querySelector('#footer-ilustration > h2').innerHTML = "Vamos conversar? Me chame em alguma rede social! ;)"
-
+    document.querySelector('#rodape > h5').innerHTML = "Feito por mim © Vinícius"
 }
 
 function buttonOnClick() {
