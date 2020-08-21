@@ -261,7 +261,7 @@ nav a:hover {
 
 #content p, #content li {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1rem + 0.75vw);
     max-width: 70%;
     text-align: justify;
     align-self: center;
@@ -814,7 +814,7 @@ nav a:hover {
     }
 
     #cards li {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     #projects > div {
