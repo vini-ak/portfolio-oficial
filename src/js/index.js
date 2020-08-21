@@ -55,7 +55,7 @@ function englishText() {
     cardsH1.innerHTML = "SKILLS"
     cardsLi1.innerHTML = "Visual Design"
     cardsLi2.innerHTML = "Usability"
-    cardsLi3.innerHTML = "UX Researches"
+    cardsLi3.innerHTML = "Figma"
 
     projectsH1.innerHTML = "PROJECTS"
     document.querySelectorAll('.project-info > a > p').forEach((info) => {
@@ -145,7 +145,7 @@ function portugueseText() {
     cardsH1.innerHTML = "HABILIDADES"
     cardsLi1.innerHTML = "Design de Interfaces"
     cardsLi2.innerHTML = "Usabilidade"
-    cardsLi3.innerHTML = "Pesquisa com usuários"
+    cardsLi3.innerHTML = "Figma"
 
     projectsH1.innerHTML = "PROJETOS"
     document.querySelectorAll('.project-info > a > p').forEach((info) => {
