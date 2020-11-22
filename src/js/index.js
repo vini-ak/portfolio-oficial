@@ -19,9 +19,9 @@ function englishText() {
     document.querySelector('#projects .project:nth-child(5) > .project-info > h4').innerHTML = "Currency Converter"
 
     aboutMeH1.innerHTML = "ABOUT ME"
-    aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Hey there! I'm glad to see you here! I'm just a young guy seeking for personal and professional improvement. Currently I am at fourth semester of <b>Information Systems at UFRPE</b> and work as a <b>Project Analyst at Seed a Bit Technology</b>. At the moment I'm looking for my first internship in Brazil, but I am also interested in taking a freelancer job or just become your friend :)"
-    interest.innerHTML =  "&nbsp;&nbsp;&nbsp;&nbsp;I am a knowledge lover and I usually spend my time studying content of different areas (such as Data Science) to find out new abilities. Nowdays I dedicate my days studing <b>Web Development</b> (more focused on front-end technologies) and I intend to go deep into UI/UX design to upgrade the appearance and usability of my next projects."
-
+    aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Hey there! I'm glad to see you here! I'm just a young guy seeking for personal and professional improvement. Currently I am at fifth semester of <b>Information Systems at UFRPE</b> and work as a <b>Project Analyst at Seed a Bit Technology</b> and also as an <b>Software Engineer Intern at UAEADTec UFRPE</b>. In my free time, I like to watch soccer games, study, listen to random musics and watch videos of cute dogs and koalas on Instagram."
+    interest.innerHTML =  "&nbsp;&nbsp;&nbsp;&nbsp;I also like to use my time to discover new areas and talents which would help me to develop my future projects. At the moment, I'm learning more about <b>Mobile Development</b> with Flutter, which is a great framework due to its ability of building an aplication that works both on Android as iOS with a single source code. Besides that, I am making progress with some web projects focused on the <b>Front-End</b> part. Another area that fascinates me a lot is project management because I love to work on group, understand the client needs and motivate my fellow project teamates."
+    
     document.querySelector('#banner nav .nav-link:nth-child(1) a').innerHTML = "About me"
     document.querySelector('#banner nav .nav-link:nth-child(2) a').innerHTML = "Skills"
     document.querySelector('#banner nav .nav-link:nth-child(3) a').innerHTML = "Projects"
@@ -139,8 +139,8 @@ function portugueseText() {
     }
 
     aboutMeH1.innerHTML = "SOBRE MIM"
-    aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Prazer! Sou um jovem em busca de aperfeiçoamento pessoal e profissional. Atualmente ocupo o cargo de <b>Analista de Projetos</b> na Seed a Bit, curso o 4° período de <b>Sistemas de Informação na UFRPE</b> e estou motivado a conseguir meu primeiro <b>estágio</b> como desenvolvedor."
-    interest.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Tenho investido meu tempo para descobrir novos talentos e tecnologias que possam me ajudar no desenvolvimento de projetos futuros. No momento, tenho dedicado meus estudos para a parte de <b>Desenvolvimento Web</b> com um foco maior em tecnologias Front-End, e pretendo entrar um pouco mais a fundo em UI/UX design para melhorar a usabilidade e aparência dos meus próximos trabalhos."
+    aboutMeText.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Prazer! Pode me chamar de Vini. Sou um jovem em busca de evolução pessoal e profissional. Atualmente ocupo os cargos de <b>Analista de Projetos</b> na Seed a Bit e <b>Estagiário em Engenharia de Software</b> na UAEADTec UFRPE, e além disso sou discente do 5° período do curso de <b>Sistemas de Informação na UFRPE</b>. Nos tempos livres, gosto de acompanhar coisas sobre futebol, estudar, ouvir música e ver vídeos de cachorros e coalas no Instagram."
+    interest.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Tenho usado meu tempo para descobrir novos talentos e tecnologias que possam me ajudar no desenvolvimento de projetos futuros. No momento, tenho dedicado meus estudos para a parte de <b>Desenvolvimento Mobile</b>, usando Flutter como ferramenta principal para criar aplicações híbridas (que funcionam tanto em Android quanto em IOS), mas também toco projetos web, tendo um foco maior na parte de <b>Front-End</b>.  Outra área que tem me encantado bastante é a que tanje o gerenciamento de projetos de software, pois sou fascinado em trabalhar em equipe, lidar com clientes e motivar pessoas."
                 
     cardsH1.innerHTML = "HABILIDADES"
     cardsLi1.innerHTML = "Design de Interfaces"
