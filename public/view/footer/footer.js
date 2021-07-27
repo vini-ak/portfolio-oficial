@@ -110,7 +110,7 @@ const ContactContainer = styled.div`
     justify-content: center;
     align-items: start;
     margin: ${constants.SECTION_HORIZONTAL_PADDING};
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 `
 
 const ContactContainerInfo = styled.div`
@@ -122,6 +122,8 @@ const ContactContainerInfo = styled.div`
 
     & > p {
         margin-left: 1rem;
+        font-family: RedHatDisplay;
+
     }
 `
 const Rodape = styled.div`

@@ -4,6 +4,7 @@ import NavLink from '../public/components/navbar/navbar-item'
 import Logo from '../public/components/logo'
 import StartSection from '../public/view/start-section/start-section'
 import Footer from '../public/view/footer/footer'
+import PresentationSection from '../public/view/presentation-section/presentation-section'
 
 export default function Home() {
   return (
@@ -25,9 +26,10 @@ export default function Home() {
           </div>
         </Navbar>
         <StartSection></StartSection>
+        <PresentationSection></PresentationSection>
+        <Footer></Footer>
       </main>
 
-      <Footer></Footer>
 
       <style jsx global>{`
         @font-face {
@@ -45,7 +47,6 @@ export default function Home() {
           padding: 0;
           margin: 0;
           font-family: Raleway, sans-serif;
-          width: 100vw;
           overflow-x: hidden;
 
         }
