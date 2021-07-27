@@ -1,0 +1,1 @@
+export const SECTION_HORIZONTAL_PADDING = "0 10%";
