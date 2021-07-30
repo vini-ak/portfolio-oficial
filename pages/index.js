@@ -5,6 +5,7 @@ import Logo from '../public/components/logo'
 import StartSection from '../public/view/start-section/start-section'
 import Footer from '../public/view/footer/footer'
 import PresentationSection from '../public/view/presentation-section/presentation-section'
+import ProjectsSection from '../public/view/projects/projects-section'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         </Navbar>
         <StartSection></StartSection>
         <PresentationSection></PresentationSection>
+        <ProjectsSection></ProjectsSection>
         <Footer></Footer>
       </main>
 
