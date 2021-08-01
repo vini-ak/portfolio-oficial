@@ -6,6 +6,8 @@ import StartSection from '../public/view/start-section/start-section'
 import Footer from '../public/view/footer/footer'
 import PresentationSection from '../public/view/presentation-section/presentation-section'
 import ProjectsSection from '../public/view/projects/projects-section'
+import OiaSection from '../public/view/oia/oia-section'
+import AboutMeSection from '../public/view/about-me/about-me-section'
 
 export default function Home() {
   return (
@@ -29,6 +31,8 @@ export default function Home() {
         <StartSection></StartSection>
         <PresentationSection></PresentationSection>
         <ProjectsSection></ProjectsSection>
+        <OiaSection></OiaSection>
+        <AboutMeSection></AboutMeSection>
         <Footer></Footer>
       </main>
 
@@ -50,6 +54,7 @@ export default function Home() {
           margin: 0;
           font-family: Raleway, sans-serif;
           overflow-x: hidden;
+          max-width: 2000px;
 
         }
 

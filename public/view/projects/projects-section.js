@@ -11,16 +11,16 @@ export default function ProjectsSection() {
         <section>
             <ProjectContainer blue>
                 <ProjectDescription blue>
-                    <p class="project-title">Web</p>
-                    <p class="project-description">Donec est sem, fermentum ac lacinia et, placerat vel sem. Mauris congue vel est sed consectetur. Morbi efficitur, justo non hendrerit varius, nunc elit facilisis risus, nec lacinia dui est eu enim. Donec vitae turpis volutpat, dapibus est in, accumsan nunc.</p>
+                    <p className="project-title">Web</p>
+                    <p className="project-description">Donec est sem, fermentum ac lacinia et, placerat vel sem. Mauris congue vel est sed consectetur. Morbi efficitur, justo non hendrerit varius, nunc elit facilisis risus, nec lacinia dui est eu enim. Donec vitae turpis volutpat, dapibus est in, accumsan nunc.</p>
                 </ProjectDescription>
                 <SectionTitle>Projetos que eu <span>desenvolvo</span></SectionTitle>
             </ProjectContainer>
             <ProjectContainer yellow>
                 <Image src={version_control} width={400} height={400}></Image>
                 <ProjectDescription yellow>
-                    <p class="project-title">Mobile</p>
-                    <p class="project-description">Donec est sem, fermentum ac lacinia et, placerat vel sem. Mauris congue vel est sed consectetur. Morbi efficitur, justo non hendrerit varius, nunc elit facilisis risus, nec lacinia dui est eu enim. Donec vitae turpis volutpat, dapibus est in, accumsan nunc.</p>
+                    <p className="project-title">Mobile</p>
+                    <p className="project-description">Donec est sem, fermentum ac lacinia et, placerat vel sem. Mauris congue vel est sed consectetur. Morbi efficitur, justo non hendrerit varius, nunc elit facilisis risus, nec lacinia dui est eu enim. Donec vitae turpis volutpat, dapibus est in, accumsan nunc.</p>
                 </ProjectDescription>
             </ProjectContainer>
         </section>
