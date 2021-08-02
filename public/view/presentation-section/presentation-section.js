@@ -18,6 +18,7 @@ export default function PresentationSection() {
 
 const Section = styled.section`
     margin: ${constants.SECTION_VERTICAL_MARGIN};
+    margin-bottom: 0;
 `
 
 const PresentationText = styled.p`
@@ -49,7 +50,7 @@ const AnimatedButtonContainer = styled.div`
     display: flex;
     align-items: center;
     margin: 2.5rem auto;
-    animation: ${Rotate} 2s linear infinite;
+    /* animation: ${Rotate} 2s linear infinite; */
 `
 
 const AnimatedButton = styled.div`

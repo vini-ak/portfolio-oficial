@@ -77,7 +77,7 @@ const SocialMediaContainerTitle = styled.h4`
     font-size: 1.5rem;
     font-family: Raleway;
     font-weight: 400;
-    margin-top: 3rem;
+    margin-top: 10%;
 
 `
 

@@ -8,6 +8,7 @@ import PresentationSection from '../public/view/presentation-section/presentatio
 import ProjectsSection from '../public/view/projects/projects-section'
 import OiaSection from '../public/view/oia/oia-section'
 import AboutMeSection from '../public/view/about-me/about-me-section'
+import StacksSection from '../public/view/stacks/stacks-section'
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <ProjectsSection></ProjectsSection>
         <OiaSection></OiaSection>
         <AboutMeSection></AboutMeSection>
+        <StacksSection></StacksSection>
         <Footer></Footer>
       </main>
 
@@ -71,6 +73,16 @@ export default function Home() {
         h5,
         h6 {
           margin: 0;
+        }
+
+        button, input[type="submit"], input[type="reset"] {
+          background: none;
+          color: inherit;
+          border: none;
+          padding: 0;
+          font: inherit;
+          cursor: pointer;
+          outline: inherit;
         }
       `}</style>
 

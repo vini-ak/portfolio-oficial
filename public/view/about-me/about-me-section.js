@@ -27,7 +27,8 @@ const AboutMeContainer = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin: 10rem 0;
+    margin: ${SECTION_VERTICAL_MARGIN};
+    margin-top: 10rem;
     padding: ${SECTION_HORIZONTAL_PADDING};
 `
 

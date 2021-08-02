@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
-import together from "/public/assets/illustrations/together.svg";
+// import together from "/public/assets/illustrations/together.svg";
 import version_control from "/public/assets/illustrations/version_control.svg";
 import ProjectDescription from "../../components/project-description/project-description";
 import * as constants from "/public/utils/constants.js";
@@ -36,7 +36,7 @@ const ProjectContainer = styled.div`
     padding-right: ${props => props.yellow ? '0' : '10%'};
 `
 
-const SectionTitle = styled.p`
+const SectionTitle = styled.div`
     font-family: RedHatDisplay;
     font-size: ${constants.MEDIUM_FONT_SIZE};
     width: 10rem;
@@ -46,6 +46,7 @@ const SectionTitle = styled.p`
     & span {
         text-align: right;
         float: right;
-        font-size: 1.5rem;        
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 `
