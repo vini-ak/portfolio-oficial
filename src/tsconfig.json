@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/shared/colors.ts", "pages/index.jsx"  ],
+, "shared/colors.ts", "pages/index.tsx"  ],
   "exclude": [
     "node_modules"
   ]

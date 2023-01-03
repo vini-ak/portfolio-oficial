@@ -1,0 +1,7 @@
+export { default as Initial } from './initial'
+export { default as Resume } from './resume'
+export { default as Skills } from './sklills'
+export { default as Portfolio } from './portfolio'
+export { default as Contact} from './contact'
+export { default as Navbar } from './navbar'
+export { default as Footer } from './footer'
