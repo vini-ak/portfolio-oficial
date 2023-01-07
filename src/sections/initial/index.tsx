@@ -22,9 +22,11 @@ const Index = ({...props}) => {
                 </S.SocialMediaContainer>
             </S.Description>
 
-            <C.StandupImage src="/assets/main.png" />
-            {/* <S.InitialSectionImg src="/assets/main.png" /> */}
-            <S.PurpleBall />
+            <S.ImageContainer>
+                <C.StandupImage src="/assets/main.png" />
+                {/* <S.InitialSectionImg src="/assets/main.png" /> */}
+                <S.PurpleBall />
+            </S.ImageContainer>
         </S.InitialSection>
     )
 }

@@ -7,7 +7,7 @@ export const InitialSection = styled.div`
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: start;
-    height: 85h;
+    /* height: 85h; */
     position: relative;
     margin-bottom: 60px;
 
@@ -15,9 +15,9 @@ export const InitialSection = styled.div`
         display: block;
     }
 
-    @media only screen and (min-width:1920px) {
+    /* @media only screen and (min-width:1920px) {
         height: 90vh;
-    }
+    } */
 
 `
 
@@ -29,25 +29,25 @@ export const Description = styled.div`
     justify-content: center;
     margin-left: 10vw;
 
-    @media only screen and (min-width:1920px) {
+    /* @media only screen and (min-width:1920px) {
         margin-left: 0;
-    }
+    } */
 `
 
 export const PurpleBall = styled.div`
     border-radius: 50%;
-    width: calc(200px + 5vw);
-    height: calc(200px + 5vw);
+    width: calc(100px + 10vw);
+    height: calc(100px + 10vw);
     background: rgba(62, 6, 136, 1) 0% 0% no-repeat padding-box;
     opacity: 0.29;
-    position: absolute;
-    top: min(calc(100% - calc(200px + 5vw)), calc(700px - calc(200px + 5vw)));
-    right: calc(calc(200px + 5vw) + 5%);
+    position: absolute !important;
+    bottom: 0;
+    left: calc(-30px - 1vw);
 
-    @media only screen and (min-width:1920px) {
+    /* @media only screen and (min-width:1920px) {
         top: calc(90vh - calc(200px + 5vw));
         right: calc(calc(200px + 10vw) + 5%);
-    }
+    } */
 `
 
 export const RoundedBorderSquare = styled.div`
@@ -84,4 +84,13 @@ export const DescriptionText = styled.p`
 export const SocialMediaContainer = styled.div`
     margin-left: -0.75rem;
     margin-top: 1rem;
+`
+
+export const ImageContainer = styled.div`
+    position: relative;
+    overflow: visible;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    width: 41vw;
 `

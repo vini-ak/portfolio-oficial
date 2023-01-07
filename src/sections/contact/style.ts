@@ -1,22 +1,27 @@
 import styled from "styled-components";
+import Colors from "../../shared/colors";
 
 export const ContactSection = styled.div`
     display: flex;
-    height: 90vh;
     padding-right: 10vw;
-    align-items: center;
+    height: 100vh;
+    align-items: bottom;
     justify-content: space-between;
+
+   
 `
 
 export const ImageContainer = styled.div`
     position: relative;
-    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
     overflow: hidden;
+    width: 41vw;
+    max-width: 700px;
+    /* height: 100%; */
 
 
-    & > * {
-        position: relative;
-    }
 
     & > .social-media {
         position: absolute;
@@ -25,8 +30,48 @@ export const ImageContainer = styled.div`
     }
 `
 
+export const FormContent = styled.div `
+    display: flex;
+    margin-bottom: 10vh;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    
+    & h1 {
+        margin-bottom: 2rem;
+    }
+
+
+`
+
 export const FormContainer = styled.div`
     width: 40vw;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: flex-end;
+    /* padding: 10vh 0; */
+
+    & .button {
+        margin-top: 1rem;
+    }
+
+`
+
+export const FormField = styled.div`
+    margin-top: .5rem;    
+
+    & .input-label {
+        color: ${Colors.darkGrey};
+        margin-left: .4rem;
+        margin-bottom: .75rem;
+        font-size: .875rem;
+
+        &.mandatory::after {
+            content: '*';
+            margin-left: .25rem;
+        }
+    }
+
+    & > * {
+        overflow: visible;
+    }
 `

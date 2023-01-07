@@ -14,15 +14,37 @@ const Index = ({...propx}) => {
                 </div>
             </S.ImageContainer>
 
-            <S.FormContainer>
-                <FormControl fullWidth variant="standard">
-                    <InputLabel htmlFor="standard-adornment-amount">Amount</InputLabel>
-                    <OutlinedInput
-                        id="standard-adornment-amount"
-                        startAdornment={<InputAdornment position="start">$</InputAdornment>}
-                    />
-                </FormControl>
-            </S.FormContainer>
+            <S.FormContent>
+                <h1>Entre em contato</h1>
+                <S.FormContainer>
+                    <S.FormField>
+                        <p className="input-label">Seu nome</p>
+                        <TextField required fullWidth label="Nome completo" id="fullWidth" />
+                    </S.FormField>
+                    <S.FormField>
+                        <p className="input-label">Seu melhor email</p>
+                        <TextField required fullWidth label="Email" id="fullWidth" />
+                    </S.FormField>
+                    <S.FormField>
+                        <p className="input-label">Seu telefone/Whatsapp</p>
+                        <TextField fullWidth label="Telefone" id="fullWidth" />
+                    </S.FormField>
+                
+                    <S.FormField>
+                        <p className="input-label">Conte mais sobre o que precisa fazer</p>
+                        <TextField
+                            id="outlined-multiline-static"
+                            fullWidth
+                            multiline
+                            rows={4}
+                        />
+                    </S.FormField>
+
+                    <C.DefaultButton className='button'>Enviar</C.DefaultButton>
+                </S.FormContainer>
+            </S.FormContent>
+
+            
 
         </S.ContactSection>
     )
