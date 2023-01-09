@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 interface Degrees{
-    degrees: number;
+    degrees?: number;
 }
 
 export const ResumeSection = styled.div<Degrees>`
-    background: ${p => `transparent linear-gradient(${p.degrees}deg, rgba(88, 64, 216, 1) 0%, rgba(59, 208, 230, 1) 100%) 0% 0% no-repeat padding-box;`} 
+    /* background: ${p => `transparent linear-gradient(${p.degrees}deg, rgba(88, 64, 216, 1) 0%, rgba(59, 208, 230, 1) 100%) 0% 0% no-repeat padding-box;`}  */
     border-radius: 10px;
     opacity: 1;
     margin: 0 10vw;

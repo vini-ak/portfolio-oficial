@@ -14,7 +14,7 @@ class Utils {
 
     public static currentYear = () => new Date().getFullYear();
 
-    public static scrollTo = (section: SectionType) => document.getElementById(section).scrollIntoView();
+    public static scrollTo = (section: SectionType) => document.getElementById(section as string).scrollIntoView();
 }
 
 export default Utils;
