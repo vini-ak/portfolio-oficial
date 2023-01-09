@@ -4,5 +4,13 @@
     "files": [
       "static/chunks/node_modules_next_dist_pages__error_js.js"
     ]
+  },
+  "../sections/contact/index.tsx -> ../../components/standup-image": {
+    "id": "../sections/contact/index.tsx -> ../../components/standup-image",
+    "files": []
+  },
+  "../sections/initial/index.tsx -> ../../components/standup-image": {
+    "id": "../sections/initial/index.tsx -> ../../components/standup-image",
+    "files": []
   }
 }

@@ -8,6 +8,13 @@ const DefaultButton = styled.button`
     border-radius: 5px;
     background-color: ${Colors.primaryBlue};
     height: 3rem;
+    transition: 0.2s ease-out;
+    
+    &:hover {
+        cursor: pointer;
+        background-color: ${Colors.secondaryPurple};
+        color: white;
+    }
 `;
 
 export default DefaultButton;

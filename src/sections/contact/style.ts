@@ -4,7 +4,7 @@ import Colors from "../../shared/colors";
 export const ContactSection = styled.div`
     display: flex;
     padding-right: 10vw;
-    height: 100vh;
+    min-height: 100vh;
     align-items: bottom;
     justify-content: space-between;
 

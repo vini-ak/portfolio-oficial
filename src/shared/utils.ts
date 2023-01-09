@@ -1,3 +1,5 @@
+import SectionType from "./sections-type";
+
 class Utils {
     public static degrees(value) {
         if(value === 359) {
@@ -11,6 +13,8 @@ class Utils {
     }
 
     public static currentYear = () => new Date().getFullYear();
+
+    public static scrollTo = (section: SectionType) => document.getElementById(section).scrollIntoView();
 }
 
 export default Utils;
