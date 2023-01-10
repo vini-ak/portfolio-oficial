@@ -1,9 +1,10 @@
-import { Stacks } from "./enums/stacks";
+import ServiceType from "./service_type";
 
 export interface Project {
     costumer: string;
     description: string;
-    stack: Stacks[];
+    service_type: string[];
+    stack: string[];
     image?: string;
     external_link?: string;
 }

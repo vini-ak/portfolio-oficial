@@ -3,6 +3,8 @@ import { NavbarSection } from "./style";
 import SectionType from '../../shared/sections-type';
 import * as C from '../../components';
 import Colors from '../../shared/colors';
+import { Icon, IconButton, ToggleButton } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = ({...props}) => {
     const [ initialSectionHeight, setInitialSectionHeight] = React.useState<number | undefined>(undefined);
@@ -27,7 +29,7 @@ const Navbar = ({...props}) => {
         <NavbarSection 
             style={{backgroundColor: props.showBg ? Colors.primaryBlue : null, position: props.showBg ? 'fixed' : 'absolute'}}
         >
-            <C.Logo style={{transform: 'scale(.75)', marginLeft: '-.5rem'}} />
+            <C.Logo style={{transform: 'scale(.65)', marginLeft: '-.5rem'}} />
             <ul className="links">
                 <li className="link"><a href={`#${SectionType.initial}`}>Quem sou</a></li>
                 <li className="link"><a href={`#${SectionType.skills}`}>O que faço</a></li>
@@ -35,6 +37,7 @@ const Navbar = ({...props}) => {
                 <li className="link"><a href={`#${SectionType.contact}`}>Contato</a></li>
                 <li><C.SocialMedia /></li>
             </ul>
+            <IconButton><MenuIcon sx={{color: Colors.primaryPurple}} fontSize={'large'} /></IconButton> 
         </NavbarSection>
     );
 }

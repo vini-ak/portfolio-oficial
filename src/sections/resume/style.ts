@@ -20,6 +20,16 @@ export const ResumeSection = styled.div<Degrees>`
         margin: 100px 0;
         width: 100%;
     }
+
+    @media only screen and (max-width:900px) {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-around;
+        height: unset;
+        min-height: 100vh;
+        padding: 2rem 0;
+    }
+
 `
 
 export const ResumeItem = styled.div`
@@ -30,5 +40,9 @@ export const ResumeItem = styled.div`
         font-weight: bolder;
         font-size: 1.5rem;
         line-height: 3rem;
+    }
+
+    @media only screen and (max-width:900px) {
+        max-width: 90%;
     }
 `

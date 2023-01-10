@@ -23,11 +23,11 @@ const Index = ({...props}) =>  {
         <S.ResumeSection id={SectionType.resume}>
                 <S.ResumeItem>
                     <h1>Educação</h1>
-                    <p>Estudante de XXX na Universidade Federal Rural de Pernambuco</p>
+                    <p>Estudante de Sistemas de Informação na Universidade Federal Rural de Pernambuco</p>
                 </S.ResumeItem>
                 <S.ResumeItem>
-                    <h1>Educação</h1>
-                    <p>Estudante de XXX na Universidade Federal Rural de Pernambuco</p>
+                    <h1>Experiência internacional</h1>
+                    <p>Fiz um intercâmbio de seis meses nos Estados Unidos</p>
                 </S.ResumeItem>
                 <S.ResumeItem>
                     <h1>Educação</h1>

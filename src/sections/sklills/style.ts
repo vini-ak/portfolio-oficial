@@ -52,6 +52,7 @@ export const SkillsCard = styled.div`
     justify-content: center;
     padding: .5rem;
     margin-bottom: 1rem;
+    padding-top: 1rem;
 
     transition: .2s ease-in;
 

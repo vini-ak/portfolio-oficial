@@ -7,9 +7,9 @@ export const PortfolioSection = styled.div`
     margin-top: 5rem;
     margin-bottom: 60px;
 
-    /* & > h1 {
-        font-size: 3rem;
-    } */
+    & > h1 {
+        margin-bottom: 3rem;
+    }
 
     @media only screen and (min-width:1920px) {
         margin: 100px 0;
@@ -18,19 +18,18 @@ export const PortfolioSection = styled.div`
 `;
 
 export const Project = styled.div`
-    width: 100%;
-    height: 400px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
+    margin-bottom: 3rem;
 
     .image {
         background: ${Colors.primaryPurple};
-        width: 50%;
+        width: 38vw;
         max-width: 650px;
         min-width: 300px;
-        height: 80%;
+        height: 50vh;
     }
 
     .description {
@@ -58,6 +57,19 @@ export const Project = styled.div`
                 color: ${Colors.grey};
             }
         }  
+
+        & > .technologies-container {
+            margin-top: 1rem;
+
+            & > .technology-title {
+                font-weight: bolder;
+                margin: .5rem 0;
+            }
+
+            & > .technologies-content {
+                color: ${Colors.grey};
+            }
+        }
 
         & > .external-link {
             margin-top: 2rem;

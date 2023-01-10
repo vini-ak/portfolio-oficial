@@ -18,6 +18,11 @@ export const NavbarSection = styled.nav`
         width: 50px;
         height: 50px;
         background-color: ${Colors.primaryPurple};
+
+        @media only screen and (max-width:900px) {
+            width: 2rem;
+            height: 2rem;
+        }
     }
 
     & > .links {
@@ -41,6 +46,10 @@ export const NavbarSection = styled.nav`
                     color: ${Colors.primaryPurple};
                 }
             }
+        }
+
+        @media only screen and (max-width:900px) {
+            display: none;
         }
     }
 `
