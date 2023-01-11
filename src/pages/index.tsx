@@ -29,6 +29,14 @@ const GlobalStyle = createGlobalStyle`
     h1 {
         font-size: 2rem;
     }
+
+    .is-mobile {
+        display: none !important;
+
+        @media only screen and (max-width:900px) {
+            display: block !important;
+        }
+    }
 `
 
 export default function Home() {

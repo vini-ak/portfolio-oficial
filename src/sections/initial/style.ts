@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Colors from "../../shared/colors";
+import { Screens as R } from "../../shared/responsivity";
 
 export const InitialSection = styled.div`
     width: 100%;
@@ -33,7 +34,7 @@ export const Description = styled.div`
         margin-left: 0;
     } */
 
-    @media only screen and (max-width:900px) {
+    @media ${R.mobile} {
         margin: 0;
         width: 100%;
         padding: 0 10vw;
@@ -59,7 +60,7 @@ export const PurpleBall = styled.div`
     } */
 
 
-    @media only screen and (max-width:900px) {
+    @media ${R.mobile} {
         display: none;
     }
 `
@@ -90,7 +91,7 @@ export const Subtitle = styled.h3`
     font-weight: 800;
 
 
-    @media only screen and (max-width:900px) {
+    @media ${R.mobile} {
         font-size: 1.75rem;
         font-weight: 600;
     }
@@ -104,6 +105,10 @@ export const DescriptionText = styled.p`
 export const SocialMediaContainer = styled.div`
     margin-left: -0.75rem;
     margin-top: 1rem;
+
+    @media ${R.mobile} {
+        margin-top: 2rem;
+    }
 `
 
 export const ImageContainer = styled.div`

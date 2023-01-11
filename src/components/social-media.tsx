@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import{ default as I } from '../public/assets/icons';
 import Colors from "../shared/colors";
+import { Screens as R } from "../shared/responsivity";
 
 const Container = styled.div`
     display: flex;
@@ -30,6 +31,13 @@ const Container = styled.div`
             transform: scale(1.1)
         } */
     }
+
+    @media ${R.mobile} {
+        & > * {
+            margin-right: .75rem;
+        }
+    }
+
 
 `;
 

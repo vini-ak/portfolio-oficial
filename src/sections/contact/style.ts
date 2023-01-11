@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Colors from "../../shared/colors";
+import { Screens as R} from "../../shared/responsivity";
 
 export const ContactSection = styled.div`
     display: flex;
@@ -7,6 +8,10 @@ export const ContactSection = styled.div`
     min-height: 100vh;
     align-items: bottom;
     justify-content: space-between;
+
+    @media ${R.mobile} {
+        padding: 0 10vw;
+    }
 
    
 `
@@ -21,12 +26,15 @@ export const ImageContainer = styled.div`
     max-width: 700px;
     /* height: 100%; */
 
-
-
     & > .social-media {
         position: absolute;
         bottom: 15%;
         left: 10vw;
+    }
+
+    @media ${R.mobile} {
+        width: unset;
+        display: none;
     }
 `
 
@@ -37,6 +45,12 @@ export const FormContent = styled.div `
     justify-content: flex-end;
     
     & h1 {
+        margin-bottom: 2rem;
+    }
+
+
+    & .is-mobile {
+        margin-left: -0.75rem;
         margin-bottom: 2rem;
     }
 
@@ -52,6 +66,12 @@ export const FormContainer = styled.div`
 
     & .button {
         margin-top: 1rem;
+    }
+
+    
+
+    @media ${R.mobile} {
+        width: 100%;
     }
 
 `

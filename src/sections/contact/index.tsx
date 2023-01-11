@@ -19,6 +19,9 @@ const Index = ({...propx}) => {
 
             <S.FormContent>
                 <h1>Entre em contato</h1>
+                <div className="is-mobile">
+                    <C.SocialMedia rounded={true} />
+                </div>
                 <FormGroup>
                     <S.FormContainer>
                         <S.FormField>
