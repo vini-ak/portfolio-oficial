@@ -32,6 +32,15 @@ export const Description = styled.div`
     /* @media only screen and (min-width:1920px) {
         margin-left: 0;
     } */
+
+    @media only screen and (max-width:900px) {
+        margin: 0;
+        width: 100%;
+        padding: 0 10vw;
+        height: unset;
+        margin-top: 20vh;
+
+    }
 `
 
 export const PurpleBall = styled.div`
@@ -48,6 +57,11 @@ export const PurpleBall = styled.div`
         top: calc(90vh - calc(200px + 5vw));
         right: calc(calc(200px + 10vw) + 5%);
     } */
+
+
+    @media only screen and (max-width:900px) {
+        display: none;
+    }
 `
 
 export const RoundedBorderSquare = styled.div`
@@ -74,6 +88,12 @@ export const Name = styled.h1`
 export const Subtitle = styled.h3`
     font-size: 2.5rem;
     font-weight: 800;
+
+
+    @media only screen and (max-width:900px) {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
 `
 
 export const DescriptionText = styled.p`

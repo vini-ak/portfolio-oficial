@@ -37,7 +37,7 @@ const Navbar = ({...props}) => {
                 <li className="link"><a href={`#${SectionType.contact}`}>Contato</a></li>
                 <li><C.SocialMedia /></li>
             </ul>
-            <IconButton><MenuIcon sx={{color: Colors.primaryPurple}} fontSize={'large'} /></IconButton> 
+            <IconButton className={'is-mobile'}><MenuIcon sx={{color: Colors.primaryPurple}} fontSize={'large'} /></IconButton> 
         </NavbarSection>
     );
 }

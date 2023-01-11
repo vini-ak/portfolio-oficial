@@ -52,4 +52,12 @@ export const NavbarSection = styled.nav`
             display: none;
         }
     }
+
+    & > .is-mobile {
+        display: none;
+
+        @media only screen and (max-width:900px) {
+            display: block;
+        }
+    }
 `

@@ -8,6 +8,10 @@ const Index = styled.img`
     top: 0;
     overflow: hidden;
 
+    @media only screen and (max-width:900px) {
+        display: none;
+    }
+
     /* @media only screen and (min-width:1920px) {
         height: 100%;
     } */
