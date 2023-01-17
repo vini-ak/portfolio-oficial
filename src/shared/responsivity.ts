@@ -1,3 +1,3 @@
 export class Screens {
-    static mobile = 'only screen and (max-width: 900px)'
+    static mobile = 'only screen and (max-width: 800px)'
 }

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Colors from "../../shared/colors";
+import { Screens as R } from "../../shared/responsivity";
 
 export const Skills = styled.div`
     width: fill;
@@ -14,7 +15,7 @@ export const Skills = styled.div`
         margin-bottom: 3rem;
     }
 
-    @media screen and (max-width: 900px) {
+    @media ${R.mobile} {
         & {
             
             max-height: unset;
@@ -30,7 +31,7 @@ export const SkillsContainer =  styled.div`
     align-items: center;
     width: 100%;
 
-    @media screen and (max-width: 900px) {
+    @media ${R.mobile} {
         & {
             justify-content: center;
         }
@@ -71,7 +72,7 @@ export const SkillsCard = styled.div`
         }
     }
 
-    @media screen and (max-width: 900px) {
+    @media ${R.mobile} {
         & {
             width: 80vw;
             height: 80vw;

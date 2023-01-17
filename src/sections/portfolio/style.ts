@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Colors from "../../shared/colors";
+import { Screens as R } from "../../shared/responsivity";
 
 export const PortfolioSection = styled.div`
     margin: 0 10vw;
@@ -85,6 +86,16 @@ export const Project = styled.div`
                 }
             }
         }
+
+        @media ${R.mobile} {
+            margin: 0;
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+
+            & > .title-container > .title {
+                font-size: 1.5rem;
+            }
+        }
     }
 
     &:nth-child(odd) {
@@ -94,7 +105,8 @@ export const Project = styled.div`
     }
 
 
-    @media screen and (max-width: 800px) {
+    @media ${R.mobile} {
+        margin-bottom: 0 !important;
 
         .image, .description {
             width: 100%;

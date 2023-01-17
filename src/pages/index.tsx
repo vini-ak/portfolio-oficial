@@ -2,6 +2,7 @@ import {createGlobalStyle} from "styled-components";
 import * as Sections from "../sections";
 import Head from "next/head";
 import { useState, useEffect } from "react";
+import { Screens as R } from "../shared/responsivity";
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -33,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     .is-mobile {
         display: none !important;
 
-        @media only screen and (max-width:900px) {
+        @media  ${R.mobile} {
             display: block !important;
         }
     }

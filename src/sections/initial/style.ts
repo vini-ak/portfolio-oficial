@@ -71,6 +71,11 @@ export const RoundedBorderSquare = styled.div`
     border-radius: 60px 0px 60px 0px;
     background-color: ${Colors.primaryBlue};
     margin-left: 16px;
+
+    @media ${R.mobile}{
+        width: 7rem;
+        height: 2.5rem; 
+    }
 `
 
 export const NameWrapper = styled.div`
@@ -84,6 +89,10 @@ export const NameWrapper = styled.div`
 export const Name = styled.h1`
     font-size: 3rem;
     font-weight: bold;
+
+    @media ${R.mobile}{
+        font-size: 2.5rem; 
+    }
 `;
 
 export const Subtitle = styled.h3`
@@ -92,7 +101,7 @@ export const Subtitle = styled.h3`
 
 
     @media ${R.mobile} {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         font-weight: 600;
     }
 `

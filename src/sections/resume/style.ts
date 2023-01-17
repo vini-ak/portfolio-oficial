@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Screens as R } from "../../shared/responsivity";
 
 interface Degrees{
     degrees?: number;
@@ -21,7 +22,7 @@ export const ResumeSection = styled.div<Degrees>`
         width: 100%;
     }
 
-    @media only screen and (max-width:900px) {
+    @media  ${R.mobile} {
         flex-flow: column nowrap;
         align-items: center;
         justify-content: space-around;
@@ -42,7 +43,7 @@ export const ResumeItem = styled.div`
         line-height: 3rem;
     }
 
-    @media only screen and (max-width:900px) {
+    @media  ${R.mobile} {
         max-width: 90%;
     }
 `
