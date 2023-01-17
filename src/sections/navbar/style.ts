@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Colors from "../../shared/colors";
+import { Screens as R } from "../../shared/responsivity";
 
 export const NavbarSection = styled.nav`
     width: 100vw;
@@ -19,7 +20,7 @@ export const NavbarSection = styled.nav`
         height: 50px;
         background-color: ${Colors.primaryPurple};
 
-        @media only screen and (max-width:900px) {
+        @media  ${R.mobile} {
             width: 2rem;
             height: 2rem;
         }
@@ -48,7 +49,7 @@ export const NavbarSection = styled.nav`
             }
         }
 
-        @media only screen and (max-width:900px) {
+        @media  ${R.mobile} {
             display: none;
         }
     }
@@ -56,8 +57,13 @@ export const NavbarSection = styled.nav`
     & > .is-mobile {
         display: none;
 
-        @media only screen and (max-width:900px) {
+        @media ${R.mobile} {
             display: block;
         }
+    }
+
+    @media ${R.mobile} {
+        position: fixed !important;
+        background-color: ${Colors.primaryBlue};
     }
 `
