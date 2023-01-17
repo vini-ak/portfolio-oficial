@@ -26,6 +26,14 @@ export const ProjectList: Project[] = [
         image: undefined,
         stack: [StackType.angular, StackType.flutter, StackType.linux],
         service_type: [ServiceType.webSystem, ServiceType.app,]
+    },
+    {
+        costumer: "Site FAST Soluções",
+        description: "Migrei todo o site da empresa para Angular 11, criei a internacionalização do site com i18n, além de ter participado da criação de novas páginas do site.",
+        external_link: undefined,
+        image: undefined,
+        stack: [StackType.angular, StackType.aws],
+        service_type: [ServiceType.site,]
     }
 
 ];
