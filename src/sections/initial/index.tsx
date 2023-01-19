@@ -28,8 +28,8 @@ const Index = ({...props}) => {
             </S.Description>
 
             <S.ImageContainer>
-                <MyImage src="/assets/main.png" />
-                {/* <S.InitialSectionImg src="/assets/main.png" /> */}
+                <MyImage src="/assets/main.jpg" loading="lazy" />
+                {/* <S.InitialSectionImg src="/assets/main.jpg" /> */}
                 <S.PurpleBall />
             </S.ImageContainer>
         </S.InitialSection>

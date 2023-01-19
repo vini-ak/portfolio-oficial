@@ -11,7 +11,7 @@ const Index = ({...propx}) => {
     return (
         <S.ContactSection id={SectionType.contact}>
             <S.ImageContainer>
-                <MyImage src='/assets/contact.png' />
+                <MyImage src='/assets/contact.jpg' />
                 <div className="social-media">
                     <C.SocialMedia rounded={true} />
                 </div>
