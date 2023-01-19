@@ -17,9 +17,10 @@ export const ResumeSection = styled.div<Degrees>`
     align-items: center;
     margin-bottom: 60px;
 
-    @media only screen and (min-width:1920px) {
-        margin: 100px 0;
-        width: 100%;
+    @media ${R.largeScreen} {
+        max-width: 1920px;
+        margin: 0 auto;       
+        margin-bottom: 60px; 
     }
 
     @media  ${R.mobile} {

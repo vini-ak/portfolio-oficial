@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavbarSection } from "./style";
+import { NavbarContainer, NavbarSection } from "./style";
 import SectionType from '../../shared/sections-type';
 import * as C from '../../components';
 import Colors from '../../shared/colors';
@@ -30,22 +30,22 @@ const Navbar = ({...props}) => {
 
     return (
         <>
-            <NavbarSection 
-                style={{backgroundColor: props.showBg ? Colors.primaryBlue : null, position: props.showBg ? 'fixed' : 'absolute'}}
-            >
-                <C.Logo style={{transform: 'scale(.65)', marginLeft: '-.5rem'}} />
-                <ul className="links">
-                    <li className="link"><a href={`#${SectionType.initial}`}>Quem sou</a></li>
-                    <li className="link"><a href={`#${SectionType.skills}`}>O que faço</a></li>
-                    <li className="link"><a href={`#${SectionType.portfolio}`}>Portfólio</a></li>
-                    <li className="link"><a href={`#${SectionType.contact}`}>Contato</a></li>
-                    <li><C.SocialMedia /></li>
-                </ul>
+            <NavbarSection style={{backgroundColor: props.showBg ? Colors.primaryBlue : null, position: props.showBg ? 'fixed' : 'absolute'}}>
+                <NavbarContainer>
+                    <C.Logo style={{transform: 'scale(.65)', marginLeft: '-.5rem'}} />
+                    <ul className="links">
+                        <li className="link"><a href={`#${SectionType.initial}`}>Quem sou</a></li>
+                        <li className="link"><a href={`#${SectionType.skills}`}>O que faço</a></li>
+                        <li className="link"><a href={`#${SectionType.portfolio}`}>Portfólio</a></li>
+                        <li className="link"><a href={`#${SectionType.contact}`}>Contato</a></li>
+                        <li><C.SocialMedia /></li>
+                    </ul>
 
-                <IconButton className={'is-mobile'} onClick={() => setShowMobileMenu(!showMobileMenu)}><MenuIcon sx={{color: Colors.primaryPurple}} fontSize={'large'} /></IconButton> 
+                    <IconButton className={'is-mobile'} onClick={() => setShowMobileMenu(!showMobileMenu)}><MenuIcon sx={{color: Colors.primaryPurple}} fontSize={'large'} /></IconButton> 
+                </NavbarContainer>
+
+                { showMobileMenu && <MobileMenu onClickLink={() => setShowMobileMenu(true)} />}
             </NavbarSection>
-
-            { showMobileMenu && <MobileMenu onClickLink={() => setShowMobileMenu(true)} />}
         </>
 
     );

@@ -13,6 +13,13 @@ export const ContactSection = styled.div`
         padding: 0 10vw;
     }
 
+    @media ${R.largeScreen} {
+        max-width: 1920px;
+        margin: 0 auto;   
+        padding-right: 0;     
+        min-height: unset;
+    }
+
    
 `
 
@@ -52,6 +59,10 @@ export const FormContent = styled.div `
     & .is-mobile {
         margin-left: -0.75rem;
         margin-bottom: 2rem;
+    }
+
+    @media ${R.largeScreen} {
+        margin-right: 0;        
     }
 
 

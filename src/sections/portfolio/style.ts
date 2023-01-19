@@ -12,9 +12,9 @@ export const PortfolioSection = styled.div`
         margin-bottom: 3rem;
     }
 
-    @media only screen and (min-width:1920px) {
-        margin: 100px 0;
-        width: 100%;
+    @media ${R.largeScreen} {
+        max-width: 1920px;
+        margin: 100px auto;        
     }
 `;
 

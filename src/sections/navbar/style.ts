@@ -3,17 +3,26 @@ import Colors from "../../shared/colors";
 import { Screens as R } from "../../shared/responsivity";
 
 export const NavbarSection = styled.nav`
-    width: 100vw;
-    display: flex;
-    padding: .0125rem 10vw;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
     position: fixed;
     top: 0;
     z-index: 2;
     transition: .5s ease-out;
     overflow: hidden;
+
+    @media ${R.mobile} {
+        position: fixed !important;
+        background-color: ${Colors.primaryBlue};
+    }
+`
+
+export const NavbarContainer = styled.div`
+    width: 100%;
+    display: flex;
+    padding: .0125rem 10vw;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
 
     & > .logo {
         width: 50px;
@@ -62,8 +71,10 @@ export const NavbarSection = styled.nav`
         }
     }
 
-    @media ${R.mobile} {
-        position: fixed !important;
-        background-color: ${Colors.primaryBlue};
+    @media ${R.largeScreen} {
+        padding: .5rem 0;
+        max-width: 1920px;
+        margin: 0 auto;
     }
+
 `

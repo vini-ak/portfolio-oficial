@@ -16,9 +16,10 @@ export const InitialSection = styled.div`
         display: block;
     }
 
-    /* @media only screen and (min-width:1920px) {
-        height: 90vh;
-    } */
+    @media ${R.largeScreen} {
+        max-width: 1920px;
+        margin: 0 auto;        
+    }
 
 `
 
@@ -30,9 +31,6 @@ export const Description = styled.div`
     justify-content: center;
     margin-left: 10vw;
 
-    /* @media only screen and (min-width:1920px) {
-        margin-left: 0;
-    } */
 
     @media ${R.mobile} {
         margin: 0;
@@ -40,7 +38,11 @@ export const Description = styled.div`
         padding: 0 10vw;
         height: unset;
         margin-top: 20vh;
+    }
 
+    @media ${R.largeScreen} {
+        margin-left: 0;
+        max-height: 1000px;
     }
 `
 
