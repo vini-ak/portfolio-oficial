@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { NavbarContainer, NavbarSection } from "./style";
 import SectionType from '../../shared/sections-type';
 import * as C from '../../components';
@@ -12,6 +12,7 @@ const Navbar = ({...props}) => {
     const [ initialSectionHeight, setInitialSectionHeight] = React.useState<number | undefined>(undefined);
     const [ showBg, setShowBg ] = React.useState<boolean>(false);
     const [ showMobileMenu, setShowMobileMenu ] = React.useState<boolean>(false);
+    const ref = React.useRef(null);
 
     if (typeof document !== "undefined") {
         React.useEffect(() => {
@@ -27,6 +28,9 @@ const Navbar = ({...props}) => {
         }, [initialSectionHeight, showBg, showMobileMenu]);
     }
 
+    const closeMobileMenu = () => {
+        setShowMobileMenu(false);
+    }
 
     return (
         <>
@@ -44,7 +48,7 @@ const Navbar = ({...props}) => {
                     <IconButton className={'is-mobile'} onClick={() => setShowMobileMenu(!showMobileMenu)}><MenuIcon sx={{color: Colors.primaryPurple}} fontSize={'large'} /></IconButton> 
                 </NavbarContainer>
 
-                { showMobileMenu && <MobileMenu onClickLink={() => setShowMobileMenu(true)} />}
+                { showMobileMenu && <MobileMenu onClickLink={closeMobileMenu} />}
             </NavbarSection>
         </>
 

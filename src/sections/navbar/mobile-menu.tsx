@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styled from 'styled-components';
 import Colors from "../../shared/colors";
 import SectionType from "../../shared/sections-type";
@@ -32,14 +32,36 @@ const MenuLinks = styled.ul`
     }
 `
 
-const Index = ({onClickLink, ...props}) => {
+const Link = ({attrs, onClickLink: closeMobileMenu}) => {
+    const ref = useRef(document.getElementById(attrs.id as string))
+    const handleClick = () => {
+        ref.current.scrollIntoView()
+        console.log("acarao")
+        closeMobileMenu()
+    }
+
+    return (
+        <li className="link" onClick={() => handleClick()}><a>{attrs.text}</a></li>
+    );
+}
+
+interface LinkParameters {
+    text: string;
+    id: string;
+}
+
+const Index = ({onClickLink: closeMobileMenu, ...props}) => {
+    const links: LinkParameters[] = [
+        {'text': 'Quem sou', 'id': SectionType.initial},
+        {'text': 'O que faço', 'id': SectionType.skills},
+        {'text': 'Portfolio', 'id': SectionType.portfolio},
+        {'text': 'Contato', 'id': SectionType.contact},
+    ];
+
     return (
         <MenuContainer>
             <MenuLinks>
-                <li className="link" onClick={() => onClickLink()} ><a href={`#${SectionType.initial}`}>Quem sou</a></li>
-                <li className="link"><a href={`#${SectionType.skills}`}>O que faço</a></li>
-                <li className="link"><a href={`#${SectionType.portfolio}`}>Portfólio</a></li>
-                <li className="link"><a href={`#${SectionType.contact}`}>Contato</a></li>
+                { links.map((item) => (<Link attrs={item} onClickLink={closeMobileMenu} />)) }
                 <li><C.SocialMedia rounded={true}/></li>
             </MenuLinks>
         </MenuContainer>
