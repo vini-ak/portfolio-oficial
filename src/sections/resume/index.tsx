@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, } from "react";
 import * as S from "./style";
-import Utils from "../../shared/utils";
 import SectionType from "../../shared/sections-type";
 import { setInterval } from "timers";
 
@@ -27,11 +26,11 @@ const Index = ({...props}) =>  {
                 </S.ResumeItem>
                 <S.ResumeItem>
                     <h1>Experiência internacional</h1>
-                    <p>Fiz um intercâmbio de seis meses nos Estados Unidos</p>
+                    <p>Fiz um intercâmbio de seis meses nos Estados Unidos, mais precisamente no estado do Alaska</p>
                 </S.ResumeItem>
                 <S.ResumeItem>
-                    <h1>Educação</h1>
-                    <p>Estudante de XXX na Universidade Federal Rural de Pernambuco</p>
+                    <h1>CTO de Empresa Junior</h1>
+                    <p>Tive a honra de ser diretor da Seed a Bit Tecnologia entre janeiro e maio de 2021</p>
                 </S.ResumeItem>
             </S.ResumeSection>
     )

@@ -41,7 +41,7 @@ export const ResumeItem = styled.div`
     & > h1 {
         font-weight: bolder;
         font-size: 1.5rem;
-        line-height: 3rem;
+        margin-bottom: 1rem;
     }
 
     @media  ${R.mobile} {

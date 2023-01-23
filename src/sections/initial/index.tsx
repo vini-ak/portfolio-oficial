@@ -3,7 +3,6 @@ import * as S from './style';
 import * as C from '../../components';
 import SectionType from "../../shared/sections-type";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import Utils from "../../shared/utils";
 
 const MyImage = dynamic(() => import("../../components/standup-image"));
